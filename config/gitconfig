@@ -1,0 +1,9 @@
+[user]
+	name = James Ottaway
+	email = git@james.ottaway.io
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[github]
+	user = jottaway

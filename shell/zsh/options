@@ -1,0 +1,8 @@
+setopt prompt_subst
+setopt hist_ignore_dups
+setopt appendhistory
+setopt autocd
+
+unsetopt beep
+unsetopt extendedglob
+unsetopt nomatch

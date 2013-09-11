@@ -1,0 +1,2 @@
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+source ~/.fresh/build/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

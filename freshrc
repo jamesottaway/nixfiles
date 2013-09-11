@@ -1,0 +1,67 @@
+fresh freshshell/fresh bin/fresh --bin
+
+fresh aliases/git
+fresh aliases/misc
+
+fresh-options --bin
+  fresh bin/ssid
+  fresh bin/subl
+
+  fresh defunkt/repl bin/repl
+  fresh rtomayko/dotfiles bin/+x
+  fresh rtomayko/dotfiles bin/addr
+  fresh rtomayko/dotfiles bin/served
+  fresh jasoncodes/dotfiles bin/pidof
+  fresh jasoncodes/dotfiles bin/vol
+  fresh benhoskings/dot-files files/bin/gbrt
+fresh-options
+
+fresh rtomayko/dotfiles bin/lock-screen --bin=~/bin/lock
+fresh sivel/speedtest-cli speedtest_cli.py --bin=~/bin/speedtest
+
+fresh-options --file
+  fresh config/gemrc
+  fresh config/gitconfig
+  fresh config/zshrc
+fresh-options
+
+fresh shell/brew
+fresh shell/chruby
+fresh shell/options
+fresh shell/zsh/history
+fresh shell/zsh/options
+
+fresh akatov/dotfiles zshrc/dedup-path
+fresh rupa/z z.sh
+
+fresh shell/zsh/oh-my-zsh
+fresh-options --file=oh-my-zsh --marker
+  fresh robbyrussell/oh-my-zsh lib/aliases.zsh
+  fresh robbyrussell/oh-my-zsh lib/completion.zsh
+  fresh robbyrussell/oh-my-zsh lib/directories.zsh
+  fresh robbyrussell/oh-my-zsh lib/edit-command-line.zsh
+  fresh robbyrussell/oh-my-zsh lib/git.zsh
+  fresh robbyrussell/oh-my-zsh lib/key-bindings.zsh
+  fresh robbyrussell/oh-my-zsh lib/misc.zsh
+  fresh robbyrussell/oh-my-zsh lib/spectrum.zsh
+  fresh robbyrussell/oh-my-zsh lib/theme-and-appearance.zsh
+  fresh robbyrussell/oh-my-zsh themes/muse.zsh-theme
+fresh-options
+
+fresh shell/zsh/completion
+fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
+fresh zsh-users/zsh-completions src/_brew --file=completion/_brew
+fresh zsh-users/zsh-completions src/_gem --file=completion/_gem
+fresh zsh-users/zsh-completions src/_heroku --file=completion/_heroku
+fresh zsh-users/zsh-completions src/_rails --file=completion/_rails
+fresh zsh-users/zsh-completions src/_ssh-copy-id --file=completion/_ssh-copy-id
+fresh zsh-users/zsh-completions src/_virtualbox --file=completion/_virtualbox
+
+fresh shell/autoenv
+fresh kennethreitz/autoenv . --file=~/.autoenv/
+
+fresh bin/xctool.sh --bin
+fresh facebook/xctool . --file=xctool/
+
+fresh shell/zsh/highlighting
+fresh zsh-users/zsh-syntax-highlighting . --file=zsh-syntax-highlighting/
