@@ -1,7 +1,4 @@
-alias s="subl ."
-alias path='echo -e ${PATH//:/\\n}'
-alias zshrc="source ~/.zshrc"
-alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' | sort | uniq -c | sort -nr | head -n 20"
 alias h='history'
 alias c='clear'
 alias cls='clear && ls'
+alias k9='kill -9'

@@ -1,3 +1,16 @@
 alias g='git status --short'
+
 alias ga='git add'
 alias gaa='ga --all'
+
+alias gc='git commit'
+
+alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+alias gpom='git push origin master'
+
+alias grs='git reset --soft'
+alias grh='git reset --hard'
+
+alias gs='git stash'
+alias gsd='gs drop'

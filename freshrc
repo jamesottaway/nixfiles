@@ -1,6 +1,10 @@
 fresh freshshell/fresh bin/fresh --bin
 
+fresh aliases/bin
+fresh aliases/convenience
+fresh aliases/editor
 fresh aliases/git
+fresh aliases/ifconfig.me
 fresh aliases/misc
 
 fresh-options --bin
@@ -14,16 +18,20 @@ fresh-options --bin
   fresh jasoncodes/dotfiles bin/pidof
   fresh jasoncodes/dotfiles bin/vol
   fresh benhoskings/dot-files files/bin/gbrt
+  fresh rtomayko/dotfiles bin/lock-screen
+  fresh sivel/speedtest-cli speedtest_cli.py
 fresh-options
-
-fresh rtomayko/dotfiles bin/lock-screen --bin=~/bin/lock
-fresh sivel/speedtest-cli speedtest_cli.py --bin=~/bin/speedtest
 
 fresh-options --file
   fresh config/gemrc
   fresh config/gitconfig
   fresh config/zshrc
 fresh-options
+
+fresh functions/authme
+fresh functions/extract
+fresh functions/mkcd
+fresh functions/title
 
 fresh shell/brew
 fresh shell/chruby
