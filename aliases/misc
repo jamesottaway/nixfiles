@@ -1,4 +1,4 @@
-alias h='history'
-alias c='clear'
-alias cls='clear && ls'
-alias k9='kill -9'
+alias zshrc='source ~/.zshrc'
+alias path='echo -e ${PATH//:/\\n}'
+alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' | sort | uniq -c | sort -nr | head -n 20"
+alias ifconfig.me='curl ifconfig.me'

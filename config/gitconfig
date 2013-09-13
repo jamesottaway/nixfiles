@@ -2,8 +2,35 @@
 	name = James Ottaway
 	email = git@james.ottaway.io
 [color]
-	diff = auto
-	status = auto
-	branch = auto
+	ui = true
 [github]
-	user = jottaway
+	user = jamesottaway
+[help]
+	autocorrect = 1
+[core]
+	pager = 
+	autocrlf = input
+[apply]
+	whitespace = warn
+[alias]
+	a = add
+	aa = add --all
+	b = branch
+	c = commit
+	cm = commit --message
+	cl = clone
+	co = checkout
+	conf = config
+	d = diff --word-diff
+	dc = diff --cached --word-diff
+	discard = checkout --
+	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset' --abbrev-commit
+	latest = !sh -c 'git log $1@{1}..$1@{0} "$@"'
+	pom = push origin master
+	pod = push origin develop
+	phm = push heroku master
+	rs = reset --soft
+	rh = reset --hard
+	s = status --short
+	unstage = reset HEAD
+	who = shortlog -s --

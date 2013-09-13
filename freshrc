@@ -1,11 +1,9 @@
 fresh freshshell/fresh bin/fresh --bin
 
 fresh aliases/bin
-fresh aliases/convenience
 fresh aliases/editor
-fresh aliases/git
-fresh aliases/ifconfig.me
 fresh aliases/misc
+fresh aliases/shell
 
 fresh-options --bin
   fresh bin/ssid
@@ -30,6 +28,7 @@ fresh-options
 
 fresh functions/authme
 fresh functions/extract
+fresh functions/git
 fresh functions/mkcd
 fresh functions/title
 

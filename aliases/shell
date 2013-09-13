@@ -1,0 +1,4 @@
+alias h='history'
+alias c='clear'
+alias cls='clear && ls'
+alias k9='kill -9'
