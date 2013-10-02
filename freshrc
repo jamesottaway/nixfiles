@@ -18,6 +18,7 @@ fresh-options --bin
   fresh benhoskings/dot-files files/bin/gbrt
   fresh rtomayko/dotfiles bin/lock-screen
   fresh sivel/speedtest-cli speedtest_cli.py
+  fresh k4rthik/git-cal git-cal
 fresh-options
 
 fresh-options --file
@@ -34,6 +35,7 @@ fresh functions/title
 
 fresh shell/brew
 fresh shell/chruby
+fresh shell/npm
 fresh shell/options
 fresh shell/zsh/history
 fresh shell/zsh/options

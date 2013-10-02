@@ -34,3 +34,6 @@
 	s = status --short
 	unstage = reset HEAD
 	who = shortlog -s --
+	tfc = tf checkin
+	tfp = tf pull
+	tfpr = tf pull --rebase
