@@ -1,9 +1,7 @@
 fresh freshshell/fresh bin/fresh --bin
+fresh freshshell/fresh-open bin/fresh-open --bin
 
-fresh aliases/bin
-fresh aliases/editor
-fresh aliases/misc
-fresh aliases/shell
+fresh aliases/\*
 
 fresh-options --bin
   fresh bin/ssid
