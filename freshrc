@@ -40,6 +40,9 @@ fresh shell/options
 fresh shell/zsh/history
 fresh shell/zsh/options
 
+fresh shell/dvcs
+fresh markryall/dotfiles shell/aliases/dvcs.sh
+
 fresh akatov/dotfiles zshrc/dedup-path
 fresh rupa/z z.sh
 
