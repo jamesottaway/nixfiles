@@ -69,8 +69,5 @@ fresh zsh-users/zsh-completions src/_virtualbox --file=completion/_virtualbox
 fresh shell/autoenv
 fresh kennethreitz/autoenv . --file=~/.autoenv/
 
-fresh bin/xctool.sh --bin
-fresh facebook/xctool . --file=xctool/
-
 fresh shell/zsh/highlighting
 fresh zsh-users/zsh-syntax-highlighting . --file=zsh-syntax-highlighting/
