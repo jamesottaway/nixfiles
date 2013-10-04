@@ -37,16 +37,17 @@ fresh shell/brew
 fresh shell/chruby
 fresh shell/npm
 fresh shell/options
+fresh shell/zsh/completion
 fresh shell/zsh/history
 fresh shell/zsh/options
 
-fresh shell/dvcs
+fresh lib/dvcs
 fresh markryall/dotfiles shell/aliases/dvcs.sh
 
 fresh akatov/dotfiles zshrc/dedup-path
 fresh rupa/z z.sh
 
-fresh shell/zsh/oh-my-zsh
+fresh lib/oh-my-zsh
 fresh-options --file=oh-my-zsh --marker
   fresh robbyrussell/oh-my-zsh lib/aliases.zsh
   fresh robbyrussell/oh-my-zsh lib/completion.zsh
@@ -60,7 +61,7 @@ fresh-options --file=oh-my-zsh --marker
   fresh robbyrussell/oh-my-zsh themes/muse.zsh-theme
 fresh-options
 
-fresh shell/zsh/completion
+fresh lib/zsh-completion-fpath
 fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
 fresh zsh-users/zsh-completions src/_brew --file=completion/_brew
 fresh zsh-users/zsh-completions src/_gem --file=completion/_gem
@@ -69,8 +70,8 @@ fresh zsh-users/zsh-completions src/_rails --file=completion/_rails
 fresh zsh-users/zsh-completions src/_ssh-copy-id --file=completion/_ssh-copy-id
 fresh zsh-users/zsh-completions src/_virtualbox --file=completion/_virtualbox
 
-fresh shell/autoenv
+fresh lib/autoenv
 fresh kennethreitz/autoenv . --file=~/.autoenv/
 
-fresh shell/zsh/highlighting
+fresh lib/zsh-syntax-highlighting
 fresh zsh-users/zsh-syntax-highlighting . --file=zsh-syntax-highlighting/

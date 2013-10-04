@@ -1,0 +1,1 @@
+fpath=(~/.fresh/build/completion $fpath)

@@ -1,6 +1,3 @@
-fpath=(~/.fresh/build/completion $fpath)
-
 zstyle :compinstall filename '/Users/james/.zshrc'
-
 autoload -Uz compinit
 compinit
