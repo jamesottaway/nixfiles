@@ -25,7 +25,7 @@
 	dc = diff --cached --word-diff
 	discard = checkout --
 	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset' --abbrev-commit
-	latest = !sh -c 'git log $1@{1}..$1@{0} "$@"'
+	latest = log -n 1
 	pom = push origin master
 	pod = push origin develop
 	phm = push heroku master
