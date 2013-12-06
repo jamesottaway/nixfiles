@@ -7,6 +7,7 @@ fresh-options --bin
   fresh bin/ssid
   fresh bin/subl
 
+  fresh git/git contrib/diff-highlight/diff-highlight
   fresh defunkt/repl bin/repl
   fresh rtomayko/dotfiles bin/+x
   fresh rtomayko/dotfiles bin/addr

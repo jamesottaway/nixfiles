@@ -12,6 +12,10 @@
 	autocrlf = input
 [apply]
 	whitespace = warn
+[push]
+	default = current
+[pager]
+	diff = diff-highlight
 [alias]
 	a = add
 	aa = add --all
@@ -21,8 +25,8 @@
 	cl = clone
 	co = checkout
 	conf = config
-	d = diff --word-diff
-	dc = diff --cached --word-diff
+	d = diff
+	dc = diff --cached
 	discard = checkout --
 	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset' --abbrev-commit
 	latest = log -n 1
