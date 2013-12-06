@@ -1,6 +1,20 @@
 fresh freshshell/fresh bin/fresh --bin
 fresh freshshell/fresh-open bin/fresh-open --bin
 
+fresh lib/oh-my-zsh
+fresh-options --file=oh-my-zsh --marker
+  fresh robbyrussell/oh-my-zsh lib/aliases.zsh
+  fresh robbyrussell/oh-my-zsh lib/completion.zsh
+  fresh robbyrussell/oh-my-zsh lib/directories.zsh
+  fresh robbyrussell/oh-my-zsh lib/edit-command-line.zsh
+  fresh robbyrussell/oh-my-zsh lib/git.zsh
+  fresh robbyrussell/oh-my-zsh lib/key-bindings.zsh
+  fresh robbyrussell/oh-my-zsh lib/misc.zsh
+  fresh robbyrussell/oh-my-zsh lib/spectrum.zsh
+  fresh robbyrussell/oh-my-zsh lib/theme-and-appearance.zsh
+  fresh robbyrussell/oh-my-zsh themes/muse.zsh-theme
+fresh-options
+
 fresh aliases/\*
 
 fresh-options --bin
@@ -45,20 +59,6 @@ fresh markryall/dotfiles shell/aliases/dvcs.sh
 
 fresh akatov/dotfiles zshrc/dedup-path
 fresh rupa/z z.sh
-
-fresh lib/oh-my-zsh
-fresh-options --file=oh-my-zsh --marker
-  fresh robbyrussell/oh-my-zsh lib/aliases.zsh
-  fresh robbyrussell/oh-my-zsh lib/completion.zsh
-  fresh robbyrussell/oh-my-zsh lib/directories.zsh
-  fresh robbyrussell/oh-my-zsh lib/edit-command-line.zsh
-  fresh robbyrussell/oh-my-zsh lib/git.zsh
-  fresh robbyrussell/oh-my-zsh lib/key-bindings.zsh
-  fresh robbyrussell/oh-my-zsh lib/misc.zsh
-  fresh robbyrussell/oh-my-zsh lib/spectrum.zsh
-  fresh robbyrussell/oh-my-zsh lib/theme-and-appearance.zsh
-  fresh robbyrussell/oh-my-zsh themes/muse.zsh-theme
-fresh-options
 
 fresh lib/zsh-completion-fpath
 fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
