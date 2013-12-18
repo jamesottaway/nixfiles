@@ -53,6 +53,7 @@ fresh shell/chruby
 fresh shell/npm
 fresh shell/options
 fresh shell/zsh/completion
+fresh shell/zsh/direnv
 fresh shell/zsh/history
 fresh shell/zsh/options
 
