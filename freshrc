@@ -44,6 +44,7 @@ fresh-options
 fresh functions/authme
 fresh functions/extract
 fresh functions/git
+fresh functions/manpdf
 fresh functions/mkcd
 fresh functions/title
 
