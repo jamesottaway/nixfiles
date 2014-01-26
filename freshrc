@@ -42,16 +42,18 @@ fresh-options
 
 fresh functions/authme
 fresh functions/extract
-fresh functions/git
 fresh functions/manpdf
 fresh functions/mkcd
 fresh functions/title
+
+fresh functions/git
+fresh shell/zsh/completion/functions/git
 
 fresh shell/brew
 fresh shell/chruby
 fresh shell/npm
 fresh shell/options
-fresh shell/zsh/completion
+fresh shell/zsh/completion/init
 fresh shell/zsh/direnv
 fresh shell/zsh/history
 fresh shell/zsh/options
