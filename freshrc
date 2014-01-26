@@ -30,6 +30,7 @@ fresh-options --bin
   fresh rtomayko/dotfiles bin/lock-screen
   fresh sivel/speedtest-cli speedtest_cli.py
   fresh k4rthik/git-cal git-cal
+  fresh twe4ked/dotfiles bin/heroku-remote-add
 fresh-options
 
 fresh-options --file
