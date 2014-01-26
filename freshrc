@@ -19,7 +19,6 @@ fresh aliases/\*
 
 fresh-options --bin
   fresh bin/ssid
-  fresh bin/subl
 
   fresh git/git contrib/diff-highlight/diff-highlight
   fresh defunkt/repl bin/repl
