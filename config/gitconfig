@@ -8,7 +8,7 @@
 [help]
 	autocorrect = 1
 [core]
-	pager = 
+	pager =
 	autocrlf = input
 [apply]
 	whitespace = warn
@@ -19,6 +19,7 @@
 [alias]
 	a = add
 	ai = add --interactive
+	amend = commit --amend
 	aa = add --all
 	b = branch
 	c = commit
@@ -26,6 +27,7 @@
 	cl = clone
 	co = checkout
 	conf = config
+	cp = cherry-pick
 	d = diff
 	dc = diff --cached
 	discard = checkout --
@@ -42,3 +44,5 @@
 	tfc = tf checkin
 	tfp = tf pull
 	tfpr = tf pull --rebase
+	snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
+	snapshots = !git stash list --grep snapshot
