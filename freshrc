@@ -40,15 +40,6 @@ fresh-options --file
   fresh config/zshrc
 fresh-options
 
-fresh functions/authme
-fresh functions/extract
-fresh functions/manpdf
-fresh functions/mkcd
-fresh functions/title
-
-fresh functions/git
-fresh shell/zsh/completion/functions/git
-
 fresh shell/brew
 fresh shell/chruby
 fresh shell/npm
@@ -57,6 +48,15 @@ fresh shell/zsh/completion/init
 fresh shell/zsh/direnv
 fresh shell/zsh/history
 fresh shell/zsh/options
+
+fresh functions/authme
+fresh functions/extract
+fresh functions/manpdf
+fresh functions/mkcd
+fresh functions/title
+
+fresh functions/git
+fresh shell/zsh/completion/functions/git
 
 fresh lib/dvcs
 fresh markryall/dotfiles shell/aliases/dvcs.sh
