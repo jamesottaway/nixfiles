@@ -43,8 +43,5 @@
   s = status --short
   unstage = reset HEAD
   who = shortlog -s --
-  tfc = tf checkin
-  tfp = tf pull
-  tfpr = tf pull --rebase
   snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
   snapshots = !git stash list --grep snapshot
