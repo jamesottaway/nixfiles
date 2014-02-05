@@ -1,5 +1,6 @@
 install autoenv
 install chruby
+install ctags
 install direnv
 install git
 install git-extras
@@ -10,6 +11,7 @@ install node
 install openvpn
 install postgresql
 install ruby-install
+install sassc
 install wget
 install xctool
 install zsh
@@ -48,6 +50,7 @@ cask install genymotion
 cask install git-annex
 cask install github
 cask install google-chrome
+cask install harvest
 cask install imageoptim
 cask install intellij-idea-community
 cask install java
@@ -84,6 +87,7 @@ cask install sublime-text3
 cask install skitch1
 
 tap caskroom/fonts
+cask install font-anonymous-pro
 cask install font-inconsolata
 cask install font-roboto
 cask install font-source-code-pro
