@@ -3,6 +3,6 @@ function g() {
 	then
 	  git $*
 	else
-	  git status --short
+	  git status --short --branch
 	fi
 }
