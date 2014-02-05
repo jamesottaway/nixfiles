@@ -1,48 +1,48 @@
 [user]
-	name = James Ottaway
-	email = git@james.ottaway.io
+  name = James Ottaway
+  email = git@james.ottaway.io
 [color]
-	ui = true
+  ui = true
 [github]
-	user = jamesottaway
+  user = jamesottaway
 [help]
-	autocorrect = 1
+  autocorrect = 1
 [core]
-	pager =
-	autocrlf = input
+  pager =
+  autocrlf = input
 [apply]
-	whitespace = warn
+  whitespace = warn
 [push]
-	default = current
+  default = current
 [pager]
-	diff = diff-highlight
+  diff = diff-highlight
 [alias]
-	a = add
-	ai = add --interactive
-	amend = commit --amend
-	aa = add --all
-	b = branch
-	c = commit
-	cm = commit --message
-	cl = clone
-	co = checkout
-	conf = config
-	cp = cherry-pick
-	d = diff
-	dc = diff --cached
-	discard = checkout --
-	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset' --abbrev-commit
-	latest = log -n 1
-	pom = push origin master
-	pod = push origin develop
-	phm = push heroku master
-	rs = reset --soft
-	rh = reset --hard
-	s = status --short
-	unstage = reset HEAD
-	who = shortlog -s --
-	tfc = tf checkin
-	tfp = tf pull
-	tfpr = tf pull --rebase
-	snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
-	snapshots = !git stash list --grep snapshot
+  a = add
+  ai = add --interactive
+  amend = commit --amend
+  aa = add --all
+  b = branch
+  c = commit
+  cm = commit --message
+  cl = clone
+  co = checkout
+  conf = config
+  cp = cherry-pick
+  d = diff
+  dc = diff --cached
+  discard = checkout --
+  l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset' --abbrev-commit
+  latest = log -n 1
+  pom = push origin master
+  pod = push origin develop
+  phm = push heroku master
+  rs = reset --soft
+  rh = reset --hard
+  s = status --short
+  unstage = reset HEAD
+  who = shortlog -s --
+  tfc = tf checkin
+  tfp = tf pull
+  tfpr = tf pull --rebase
+  snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
+  snapshots = !git stash list --grep snapshot
