@@ -19,9 +19,10 @@
   diff = diff-highlight
 [alias]
   a = add
+  aa = add --all
   ai = add --interactive
   amend = commit --amend
-  aa = add --all
+  ap = add --patch
   b = branch
   c = commit
   cm = commit --message
