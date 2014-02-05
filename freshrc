@@ -31,6 +31,7 @@ fresh-options --bin
   fresh sivel/speedtest-cli speedtest_cli.py
   fresh k4rthik/git-cal git-cal
   fresh twe4ked/dotfiles bin/heroku-remote-add
+  fresh steeve/boot2docker boot2docker
 fresh-options
 
 fresh-options --file
@@ -43,6 +44,7 @@ fresh-options
 
 fresh shell/brew
 fresh shell/chruby
+fresh shell/docker
 fresh shell/npm
 fresh shell/options
 fresh shell/zsh/completion/init
