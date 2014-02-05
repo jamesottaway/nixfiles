@@ -11,6 +11,7 @@
   editor = subl -w
   pager =
   autocrlf = input
+  excludesfile = ~/.gitignore
 [apply]
   whitespace = warn
 [push]
