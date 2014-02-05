@@ -6,15 +6,15 @@ config resizePercentOf screenSize
 
 # Abstract positions for later use within configuration.
 
-alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
-alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
-alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
-alias tophalf move screenOriginX;screenOriginY screenSizeX;screenSizeY/2
-alias bottomhalf move screenOriginX;screenOriginY+screenSizeY/2 screenSizeX;screenSizeY/2
-alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
-alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
-alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
-alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
+alias full move screenOriginX+(screenSizeX/10);screenOriginY+(screenSizeY/10) screenSizeX/10*8;screenSizeY/10*8
+alias left move screenOriginX;screenOriginY screenSizeX/4*3;screenSizeY
+alias right move screenOriginX+screenSizeX/4*1;screenOriginY screenSizeX/4*3;screenSizeY
+alias top move screenOriginX;screenOriginY screenSizeX;screenSizeY/4*3
+alias bottom move screenOriginX;screenOriginY+screenSizeY/4*1 screenSizeX;screenSizeY/4*3
+alias topleft corner top-left resize:screenSizeX/4*3;screenSizeY/4*3
+alias topright corner top-right resize:screenSizeX/4*3;screenSizeY/4*3
+alias bottomleft corner bottom-left resize:screenSizeX/4*3;screenSizeY/4*3
+alias bottomright corner bottom-right resize:screenSizeX/4*3;screenSizeY/4*3
 
 # Simple bindings for window positions
 # u i o
@@ -24,15 +24,15 @@ alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
 alias hyper ctrl;alt;cmd
 
 bind u:${hyper} ${topleft}
-bind j:${hyper} ${lefthalf}
+bind j:${hyper} ${left}
 bind m:${hyper} ${bottomleft}
 
-bind i:${hyper} ${tophalf}
+bind i:${hyper} ${top}
 bind k:${hyper} ${full}
-bind ,:${hyper} ${bottomhalf}
+bind ,:${hyper} ${bottom}
 
 bind o:${hyper} ${topright}
-bind l:${hyper} ${righthalf}
+bind l:${hyper} ${right}
 bind .:${hyper} ${bottomright}
 
 bind r:${hyper} relaunch
