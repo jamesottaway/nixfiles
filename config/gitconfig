@@ -8,6 +8,7 @@
 [help]
   autocorrect = 1
 [core]
+  editor = subl -w
   pager =
   autocrlf = input
 [apply]
