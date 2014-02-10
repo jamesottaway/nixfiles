@@ -33,6 +33,7 @@ fresh-options --bin
   fresh twe4ked/dotfiles bin/heroku-remote-add
   fresh hackling/morse bin/morse
   fresh steeve/boot2docker boot2docker
+  fresh garybernhardt/dotfiles bin/git-churn
 fresh-options
 
 fresh-options --file
