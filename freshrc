@@ -45,6 +45,10 @@ fresh-options --file
   fresh config/zshrc
 fresh-options
 
+fresh jasoncodes/dotfiles bin/adduser --bin
+fresh jasoncodes/dotfiles bin/wemux/\* --bin
+fresh jasoncodes/dotfiles config/tmux.conf --file
+
 fresh shell/brew
 fresh shell/chruby
 fresh shell/docker

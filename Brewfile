@@ -12,6 +12,8 @@ install openvpn
 install postgresql
 install ruby-install
 install sassc
+install tmux
+install wemux
 install wget
 install xctool
 install zsh
