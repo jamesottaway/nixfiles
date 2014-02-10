@@ -1,3 +1,6 @@
+update
+upgrade
+
 install autoenv
 install chruby
 install ctags
