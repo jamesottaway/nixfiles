@@ -5,6 +5,7 @@ install autoenv
 install chruby
 install ctags
 install direnv
+install dnscrypt-proxy
 install git
 install git-extras
 install go
@@ -39,10 +40,10 @@ cask install caffeine
 cask install ccleaner
 cask install chromium
 cask install cloudup
+cask install controlplane
 cask install crashplan
 cask install daisydisk
 cask install dash
-cask install dnscrypt
 cask install doxie
 cask install dropbox
 cask install evernote
@@ -59,6 +60,7 @@ cask install harvest
 cask install imageoptim
 cask install intellij-idea-community
 cask install java
+cask install jimbojsb/launchrocket/launchrocket
 cask install libreoffice
 cask install light-table
 cask install limechat
@@ -74,6 +76,8 @@ cask install rdio
 cask install reveal
 cask install scummvm
 cask install shortcat
+cask install slack
+cask install skitch
 cask install skype
 cask install slate
 cask install steam
@@ -89,7 +93,6 @@ tap caskroom/versions
 cask install firefox-aurora
 cask install google-chrome-canary
 cask install sublime-text3
-cask install skitch1
 
 tap caskroom/fonts
 cask install font-anonymous-pro
