@@ -9,15 +9,15 @@
   autocorrect = 1
 [core]
   editor = subl -w
-  pager =
+  pager = diff-highlight | less
   autocrlf = input
   excludesfile = ~/.gitignore
+[rebase]
+  autosquash = true
 [apply]
   whitespace = warn
 [push]
   default = current
-[pager]
-  diff = diff-highlight
 [alias]
   a = add
   aa = add --all
@@ -26,6 +26,8 @@
   ap = add --patch
   b = branch
   c = commit
+  ca = commit --amend
+  cf = commit --fixup
   cm = commit --message
   cl = clone
   co = checkout
@@ -35,6 +37,8 @@
   dc = diff --cached
   discard = checkout --
   fixup = commit --fixup
+  ffs = flow feature start
+  ignored = ls-files –others -i –exclude-standard
   l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset' --abbrev-commit
   l1 = !git l -n 1
   l2 = !git l -n 2
@@ -46,13 +50,25 @@
   l20 = !git l -n 20
   l25 = !git l -n 25
   latest = log -n 1
+  mod = merge origin/develop
+  patch = add --patch
   pom = push origin master
   pod = push origin develop
   phm = push heroku master
+  ready = rebase --interactive @{upstream}
+  rbi = !git rebase --interactive `git merge-base HEAD develop`
+  rd = rebase develop
+  rod = rebase origin/develop
   rs = reset --soft
   rh = reset --hard
+  rhu = reset --hard @{upstream}
   s = status --short
+  uncommit = reset --soft HEAD^
   unstage = reset HEAD
-  who = shortlog -s --
+  who = shortlog -s -n --no-merges --
   snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
   snapshots = !git stash list --grep snapshot
+  standup = shortlog --since yesterday
+  today = shortlog --since midnight
+  wip = commit --all --message 'WIP'
+  wipe = reset --hard HEAD
