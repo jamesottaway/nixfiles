@@ -59,6 +59,9 @@ fresh shell/zsh/direnv
 fresh shell/zsh/history
 fresh shell/zsh/options
 
+fresh jasoncodes/dotfiles shell/aliases/rails.sh
+fresh jasoncodes/dotfiles shell/aliases/ruby.sh
+
 fresh functions/authme
 fresh functions/dollar
 fresh functions/extract
