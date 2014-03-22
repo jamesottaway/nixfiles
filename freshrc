@@ -60,10 +60,12 @@ fresh shell/zsh/history
 fresh shell/zsh/options
 
 fresh functions/authme
+fresh functions/dollar
 fresh functions/extract
 fresh functions/manpdf
 fresh functions/mkcd
 fresh functions/title
+#fresh functions/yolo
 
 fresh functions/git
 fresh shell/zsh/completion/functions/git

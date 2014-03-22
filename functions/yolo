@@ -1,0 +1,6 @@
+function yolo {
+  git add --all
+  git commit -m "YOLO!"
+  git push origin --force
+  git push heroku --force
+}
