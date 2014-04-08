@@ -1,1 +1,2 @@
 source ~/.fresh/build/oh-my-zsh
+unset -f cd

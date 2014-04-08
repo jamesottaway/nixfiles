@@ -88,8 +88,5 @@ fresh zsh-users/zsh-completions src/_rails --file=completion/_rails
 fresh zsh-users/zsh-completions src/_ssh-copy-id --file=completion/_ssh-copy-id
 fresh zsh-users/zsh-completions src/_virtualbox --file=completion/_virtualbox
 
-fresh lib/autoenv
-fresh kennethreitz/autoenv . --file=~/.autoenv/
-
 fresh lib/zsh-syntax-highlighting
 fresh zsh-users/zsh-syntax-highlighting . --file=zsh-syntax-highlighting/
