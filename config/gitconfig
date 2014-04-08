@@ -72,3 +72,9 @@
   today = shortlog --since midnight
   wip = commit --all --message 'WIP'
   wipe = reset --hard HEAD
+[git-up "bundler"]
+  check = true
+[git-up "fetch"]
+  prune = true
+[git-up "rebase"]
+  auto = false
