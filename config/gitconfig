@@ -8,7 +8,7 @@
 [help]
   autocorrect = 1
 [core]
-  editor = subl -w
+  editor = vim
   pager = diff-highlight | less
   autocrlf = input
   excludesfile = ~/.gitignore
