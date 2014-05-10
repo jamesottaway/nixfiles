@@ -22,9 +22,9 @@ install wget
 install xctool
 install zsh
 
-install phinze/cask/brew-cask
+tap caskroom/cask
+install brew-cask
 
-tap phinze/cask
 cask install adium
 cask install airfoil
 cask install alfred
