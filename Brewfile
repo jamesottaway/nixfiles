@@ -32,6 +32,7 @@ cask install android-studio
 cask install anvil
 cask install arduino
 cask install arq
+cask install atom
 cask install authy-bluetooth
 cask install balsamiq-mockups
 cask install bittorrent-sync
