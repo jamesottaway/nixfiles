@@ -49,7 +49,6 @@ cask install dropbox
 cask install evernote
 cask install f-lux
 cask install firefox
-cask install flash
 cask install fluid
 cask install forklift
 cask install genymotion
