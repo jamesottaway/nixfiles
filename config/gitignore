@@ -3,3 +3,7 @@
 
 # ctags
 tags
+
+# tmux
+.tmux/
+.tmux.conf
