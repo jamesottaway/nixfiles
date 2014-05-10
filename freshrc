@@ -52,6 +52,7 @@ fresh jasoncodes/dotfiles config/tmux.conf --file
 fresh shell/brew
 fresh shell/chruby
 fresh shell/docker
+fresh shell/golang
 fresh shell/npm
 fresh shell/options
 fresh shell/zsh/completion/init

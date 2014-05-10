@@ -8,6 +8,7 @@ install dnscrypt-proxy
 install git
 install git-extras
 install go
+install hg
 install heroku-toolbelt
 install ios-sim
 install node
