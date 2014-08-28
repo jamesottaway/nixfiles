@@ -26,6 +26,7 @@ fresh-options --bin
   fresh rtomayko/dotfiles bin/served
   fresh jasoncodes/dotfiles bin/pidof
   fresh jasoncodes/dotfiles bin/vol
+  fresh jasoncodes/dotfiles bin/incognito
   fresh benhoskings/dot-files files/bin/gbrt
   fresh rtomayko/dotfiles bin/lock-screen
   fresh sivel/speedtest-cli speedtest_cli.py
