@@ -54,6 +54,7 @@ fresh shell/brew
 fresh shell/chruby
 fresh shell/docker
 fresh shell/golang
+fresh shell/nix
 fresh shell/npm
 fresh shell/options
 fresh shell/zsh/completion/init
