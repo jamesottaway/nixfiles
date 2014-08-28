@@ -38,7 +38,6 @@ cask install balsamiq-mockups
 cask install bittorrent-sync
 cask install boxer
 cask install caffeine
-cask install ccleaner
 cask install chromium
 cask install cloudup
 cask install controlplane
