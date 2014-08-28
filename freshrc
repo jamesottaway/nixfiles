@@ -43,6 +43,7 @@ fresh-options --file
   fresh config/gitconfig
   fresh config/gitignore
   fresh config/slate
+  fresh config/tmux.conf
   fresh config/zshrc
 fresh-options
 
