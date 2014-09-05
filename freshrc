@@ -1,5 +1,6 @@
 fresh freshshell/fresh bin/fresh --bin
 fresh freshshell/fresh-open bin/fresh-open --bin
+fresh freshshell/fresh contrib/source-build.sh --file=~/.zshrc
 
 fresh lib/oh-my-zsh
 fresh-options --file=oh-my-zsh --marker
@@ -44,7 +45,6 @@ fresh-options --file
   fresh config/gitignore
   fresh config/slate
   fresh config/tmux.conf
-  fresh config/zshrc
 fresh-options
 
 fresh jasoncodes/dotfiles bin/adduser --bin
