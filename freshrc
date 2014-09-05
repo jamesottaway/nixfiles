@@ -84,6 +84,10 @@ fresh markryall/dotfiles shell/aliases/dvcs.sh
 fresh akatov/dotfiles zshrc/dedup-path
 fresh rupa/z z.sh
 
+fresh-options --file=~/.vimrc --marker=\"
+  fresh vim/global.vim
+fresh-options
+
 fresh lib/zsh-completion-fpath
 fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
 fresh zsh-users/zsh-completions src/_brew --file=completion/_brew
