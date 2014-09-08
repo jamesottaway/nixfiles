@@ -59,6 +59,7 @@ cask install harvest
 cask install imageoptim
 cask install intellij-idea-community
 cask install java
+cask install karabiner
 cask install jimbojsb/launchrocket/launchrocket
 cask install libreoffice
 cask install light-table
