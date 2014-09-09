@@ -89,6 +89,7 @@ fresh-options --file=~/.vimrc --marker=\"
   fresh vim/vundle.vim
   fresh twe4ked/dotfiles vim/vundle_after.vim
   fresh vim/global.vim
+  fresh vim/colours.vim
 fresh-options
 
 fresh lib/zsh-completion-fpath

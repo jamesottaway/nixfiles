@@ -1,4 +1,5 @@
 Bundle 'airblade/vim-gitgutter'
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mileszs/ack.vim'
