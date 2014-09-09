@@ -14,6 +14,7 @@ install ios-sim
 install node
 install openvpn
 install postgresql
+install reattach-to-user-namespace
 install ruby-install
 install sassc
 install tmux
