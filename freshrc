@@ -12,7 +12,6 @@ fresh-options --file=oh-my-zsh --marker
   fresh robbyrussell/oh-my-zsh lib/misc.zsh
   fresh robbyrussell/oh-my-zsh lib/spectrum.zsh
   fresh robbyrussell/oh-my-zsh lib/theme-and-appearance.zsh
-  fresh robbyrussell/oh-my-zsh themes/muse.zsh-theme
 fresh-options
 
 fresh aliases/\*
@@ -83,6 +82,8 @@ fresh markryall/dotfiles shell/aliases/dvcs.sh
 
 fresh akatov/dotfiles zshrc/dedup-path
 fresh rupa/z z.sh
+
+fresh altercation/solarized iterm2-colors-solarized --file=iterm2-colors-solarized/
 
 fresh-options --file=~/.vimrc --marker=\"
   fresh twe4ked/dotfiles vim/vundle_before.vim
