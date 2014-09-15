@@ -39,6 +39,7 @@ fresh-options --bin
 fresh-options
 
 fresh-options --file
+  fresh config/curlrc
   fresh config/gemrc
   fresh config/gitconfig
   fresh config/gitignore
@@ -54,13 +55,14 @@ fresh shell/brew
 fresh shell/chruby
 fresh shell/docker
 fresh shell/golang
-fresh shell/nix
 fresh shell/npm
 fresh shell/options
 fresh shell/zsh/completion/init
 fresh shell/zsh/direnv
 fresh shell/zsh/history
 fresh shell/zsh/options
+
+fresh nix/init
 
 fresh jasoncodes/dotfiles shell/aliases/rails.sh
 fresh jasoncodes/dotfiles shell/aliases/ruby.sh
