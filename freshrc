@@ -107,3 +107,6 @@ fresh zsh-users/zsh-completions src/_virtualbox --file=completion/_virtualbox
 
 fresh lib/zsh-syntax-highlighting
 fresh zsh-users/zsh-syntax-highlighting . --file=zsh-syntax-highlighting/
+
+fresh Yelp/osxcollector osxcollector/osxcollector.py --bin
+
