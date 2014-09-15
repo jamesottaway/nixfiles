@@ -34,6 +34,7 @@ fresh-options --bin
   fresh hackling/morse bin/morse
   fresh garybernhardt/dotfiles bin/git-churn
   fresh LuRsT/hr hr
+  fresh laurent22/rsync-time-backup rsync_tmbackup.sh
 fresh-options
 
 fresh sivel/speedtest-cli speedtest_cli.py --bin=~/bin/speedtest
