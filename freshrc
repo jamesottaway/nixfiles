@@ -29,13 +29,14 @@ fresh-options --bin
   fresh jasoncodes/dotfiles bin/incognito
   fresh benhoskings/dot-files files/bin/gbrt
   fresh rtomayko/dotfiles bin/lock-screen
-  fresh sivel/speedtest-cli speedtest_cli.py
   fresh k4rthik/git-cal git-cal
   fresh twe4ked/dotfiles bin/heroku-remote-add
   fresh hackling/morse bin/morse
   fresh garybernhardt/dotfiles bin/git-churn
   fresh LuRsT/hr hr
 fresh-options
+
+fresh sivel/speedtest-cli speedtest_cli.py --bin=~/bin/speedtest
 
 fresh-options --file
   fresh config/curlrc
