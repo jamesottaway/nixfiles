@@ -1,6 +1,7 @@
 update
 upgrade
 
+install boot2docker
 install chruby
 install ctags
 install direnv
