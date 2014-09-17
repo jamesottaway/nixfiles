@@ -1,4 +1,4 @@
 ---
-gem: --document rdoc
+gem: --no-document
 :sources:
 - https://rubygems.org
