@@ -7,3 +7,7 @@ tags
 # tmux
 .tmux/
 .tmux.conf
+
+# misc
+.envrc
+TODO.md
