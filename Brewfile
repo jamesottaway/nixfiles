@@ -71,7 +71,6 @@ cask install nvalt
 cask install onepassword
 cask install osxfuse
 cask install owncloud
-cask install paragon-ntfs
 cask install plex-home-theater
 cask install prey
 cask install rdio
