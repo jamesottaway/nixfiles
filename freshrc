@@ -47,6 +47,8 @@ fresh-options --file
   fresh config/gitignore
   fresh config/slate
   fresh config/tmux.conf
+
+  fresh jamesottaway/.osx .osx --ref=jamesbookpro
 fresh-options
 
 fresh jasoncodes/dotfiles bin/adduser --bin
