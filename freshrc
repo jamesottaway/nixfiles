@@ -53,7 +53,8 @@ fresh jasoncodes/dotfiles bin/adduser --bin
 fresh jasoncodes/dotfiles bin/wemux/\* --bin
 fresh jasoncodes/dotfiles config/tmux.conf --file
 
-fresh shell/brew
+fresh path/brew
+
 fresh shell/chruby
 fresh shell/docker
 fresh shell/golang

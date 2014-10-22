@@ -1,3 +1,2 @@
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-chruby 2.1.2
+source /brew/share/chruby/chruby.sh
+source /brew/share/chruby/auto.sh
