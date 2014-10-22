@@ -1,0 +1,15 @@
+android-sdk
+awscli
+cacert
+coreutils
+ctags
+curl
+direnv
+findutils
+git
+phantomjs
+postgresql
+sqlite
+tmux
+unbound
+wget

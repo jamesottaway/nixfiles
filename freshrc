@@ -66,7 +66,6 @@ fresh shell/zsh/history
 fresh shell/zsh/options
 
 fresh nix/init
-fresh nix/nix-bundle --bin
 
 fresh jasoncodes/dotfiles shell/aliases/rails.sh
 fresh jasoncodes/dotfiles shell/aliases/ruby.sh

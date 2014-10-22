@@ -1,6 +1,0 @@
-nix-env --install git
-nix-env --install curl
-nix-env --install wget
-nix-env --install cacerts
-nix-env --install tree
-
