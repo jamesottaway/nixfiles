@@ -1,61 +1,63 @@
 install caskroom/cask/brew-cask
+tap caskroom/versions
 
-cask install airfoil
 cask install alfred
-cask install android-studio
-cask install anvil
-cask install arduino
+cask install chromium
+cask install firefox
+cask install firefox-aurora
+cask install google-chrome
+cask install google-chrome-canary
+cask install libreoffice
+cask install onepassword
+cask install plex-home-theater
+cask install rdio
+cask install slack
+cask install steam
+cask install virtualbox
+cask install wunderlist
+
 cask install arq
-cask install authy-bluetooth
 cask install bittorrent-sync
 cask install caffeine
-cask install chromium
 cask install crashplan
-cask install daisydisk
-cask install dash
 cask install dropbox
-cask install evernote
 cask install f-lux
-cask install firefox
-cask install fluid
-cask install genymotion
-cask install github
-cask install google-chrome
-cask install imageoptim
-cask install intellij-idea-community
 cask install java
 cask install karabiner
 cask install launchrocket
-cask install libreoffice
+cask install osxfuse
+cask install prey
+cask install shortcat
+cask install slate
+cask install vlc
+
+cask install android-studio
+cask install anvil
+cask install dash
+cask install genymotion
+cask install github
+cask install intellij-idea-community
 cask install light-table
+cask install reveal
+cask install testflight
+cask install vagrant
+
+cask install airfoil
+cask install arduino
+cask install authy-bluetooth
+cask install daisydisk
+cask install evernote
+cask install fluid
+cask install imageoptim
 cask install limechat
 cask install minecraft
 cask install nvalt
-cask install onepassword
-cask install osxfuse
 cask install owncloud
-cask install plex-home-theater
-cask install prey
-cask install rdio
-cask install reveal
 cask install scummvm
-cask install shortcat
 cask install skitch
 cask install skype
-cask install slack
-cask install slate
-cask install steam
-cask install testflight
 cask install the-unarchiver
 cask install truecrypt
-cask install vagrant
-cask install virtualbox
-cask install vlc
-cask install wunderlist
-
-tap caskroom/versions
-cask install firefox-aurora
-cask install google-chrome-canary
 
 tap caskroom/fonts
 cask install font-anonymous-pro
