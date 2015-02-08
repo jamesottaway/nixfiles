@@ -1,0 +1,1 @@
+alias cdpath='echo -e ${CDPATH//:/\\n}'
