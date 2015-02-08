@@ -1,2 +1,0 @@
-alias aurora='~/Applications/FirefoxAurora.app/Contents/MacOS/firefox-bin -no-remote'
-alias nightly='~/Applications/FirefoxNightly.app/Contents/MacOS/firefox-bin -no-remote'
