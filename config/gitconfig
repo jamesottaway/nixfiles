@@ -11,7 +11,7 @@
   conflictstyle = diff3
 [core]
   editor = vim
-  pager = diff-highlight | less
+  pager = diff-highlight | less -x1,3
   autocrlf = input
   excludesfile = ~/.gitignore
 [rebase]
