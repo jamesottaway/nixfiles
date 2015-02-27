@@ -4,7 +4,6 @@ fresh freshshell/fresh contrib/source-build.sh --file=~/.zshrc
 
 fresh lib/oh-my-zsh
 fresh-options --file=oh-my-zsh --marker
-  fresh robbyrussell/oh-my-zsh lib/aliases.zsh
   fresh robbyrussell/oh-my-zsh lib/completion.zsh
   fresh robbyrussell/oh-my-zsh lib/directories.zsh
   fresh robbyrussell/oh-my-zsh lib/git.zsh
