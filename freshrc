@@ -45,6 +45,7 @@ fresh-options --file
   fresh config/gemrc
   fresh config/gitconfig
   fresh config/gitignore
+  fresh config/ruby-version
   fresh config/slate
   fresh config/tmux.conf
 
