@@ -14,7 +14,6 @@ cask install rdio
 cask install slack
 cask install steam
 cask install virtualbox
-cask install wunderlist
 
 cask install arq
 cask install bittorrent-sync
@@ -44,7 +43,6 @@ cask install vagrant
 
 cask install airfoil
 cask install arduino
-cask install authy-bluetooth
 cask install daisydisk
 cask install evernote
 cask install fluid
