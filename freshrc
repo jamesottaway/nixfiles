@@ -2,16 +2,13 @@ fresh freshshell/fresh bin/fresh --bin
 fresh freshshell/fresh-open bin/fresh-open --bin
 fresh freshshell/fresh contrib/source-build.sh --file=~/.zshrc
 
-fresh lib/oh-my-zsh
-fresh-options --file=oh-my-zsh --marker
-  fresh robbyrussell/oh-my-zsh lib/completion.zsh
-  fresh robbyrussell/oh-my-zsh lib/directories.zsh
-  fresh robbyrussell/oh-my-zsh lib/git.zsh
-  fresh robbyrussell/oh-my-zsh lib/key-bindings.zsh
-  fresh robbyrussell/oh-my-zsh lib/misc.zsh
-  fresh robbyrussell/oh-my-zsh lib/spectrum.zsh
-  fresh robbyrussell/oh-my-zsh lib/theme-and-appearance.zsh
-fresh-options
+fresh robbyrussell/oh-my-zsh lib/completion.zsh
+fresh robbyrussell/oh-my-zsh lib/directories.zsh
+fresh robbyrussell/oh-my-zsh lib/git.zsh
+fresh robbyrussell/oh-my-zsh lib/key-bindings.zsh
+fresh robbyrussell/oh-my-zsh lib/misc.zsh
+fresh robbyrussell/oh-my-zsh lib/spectrum.zsh
+fresh robbyrussell/oh-my-zsh lib/theme-and-appearance.zsh
 
 fresh aliases/\*
 
