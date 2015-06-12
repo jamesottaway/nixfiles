@@ -84,7 +84,6 @@ fresh functions/manpdf
 fresh functions/mkcd
 fresh functions/today
 fresh functions/title
-#fresh functions/yolo
 
 fresh functions/git
 fresh shell/zsh/completion/functions/git
