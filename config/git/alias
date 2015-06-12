@@ -1,25 +1,3 @@
-[user]
-  name = James Ottaway
-  email = git@james.ottaway.io
-[color]
-  ui = true
-[github]
-  user = jamesottaway
-[merge]
-  conflictstyle = diff3
-[core]
-  editor = vim
-  pager = diff-highlight | less -x1,3
-  autocrlf = input
-  excludesfile = ~/.gitignore
-[rebase]
-  autosquash = true
-[apply]
-  whitespace = warn
-[push]
-  default = current
-[http]
-  sslCAinfo = /Users/james/.nix-profile/etc/ca-bundle.crt
 [alias]
   a = add
   aa = add --all
@@ -65,9 +43,3 @@
   snapshots = !git stash list --grep snapshot
   wip = commit --all --message 'WIP'
   wipe = reset --hard HEAD
-[git-up "bundler"]
-  check = true
-[git-up "fetch"]
-  prune = true
-[git-up "rebase"]
-  auto = false

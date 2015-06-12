@@ -43,13 +43,18 @@ fresh-options --file
   fresh jasoncodes/dotfiles config/ackrc
   fresh config/curlrc
   fresh config/gemrc
-  fresh config/gitconfig
   fresh config/gitignore
   fresh config/ruby-version
   fresh config/slate
   fresh config/tmux.conf
 
   fresh jamesottaway/.osx .osx --ref=jamesbookpro
+fresh-options
+
+fresh-options --file=~/.gitconfig --marker
+  fresh config/git/config
+  fresh config/git/alias
+  fresh config/git/up
 fresh-options
 
 fresh jasoncodes/dotfiles bin/adduser --bin
