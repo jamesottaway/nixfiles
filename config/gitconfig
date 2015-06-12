@@ -5,8 +5,6 @@
   ui = true
 [github]
   user = jamesottaway
-[help]
-  autocorrect = 1
 [merge]
   conflictstyle = diff3
 [core]
