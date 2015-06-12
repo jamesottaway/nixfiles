@@ -117,3 +117,4 @@ fresh Yelp/osxcollector osxcollector/osxcollector.py --bin
 
 fresh lib/pure
 fresh sindresorhus/pure pure.zsh --file=zsh/pure/prompt_pure_setup
+fresh sindresorhus/pure async.zsh --file=zsh/pure/async
