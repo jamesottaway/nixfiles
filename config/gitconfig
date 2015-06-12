@@ -67,6 +67,7 @@
   rh = reset --hard
   rhu = reset --hard @{upstream}
   s = status --short
+  squash = commit --squash
   uncommit = reset --soft HEAD^
   unstage = reset HEAD
   who = shortlog -s -n --no-merges --
