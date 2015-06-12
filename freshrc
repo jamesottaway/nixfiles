@@ -40,17 +40,15 @@ fresh laurent22/rsync-time-backup rsync_tmbackup.sh --bin
 fresh jamesottaway/tmux-up tmux-up --bin
 fresh sivel/speedtest-cli speedtest_cli.py --bin=~/bin/speedtest
 
-fresh-options --file
-  fresh jasoncodes/dotfiles config/ackrc
-  fresh config/curlrc
-  fresh config/gemrc
-  fresh config/gitignore
-  fresh config/ruby-version
-  fresh config/slate
-  fresh config/tmux.conf
+fresh config/curlrc --file
+fresh config/gemrc --file
+fresh config/gitignore --file
+fresh config/ruby-version --file
+fresh config/slate --file
+fresh config/tmux.conf --file
 
-  fresh jamesottaway/.osx .osx --ref=jamesbookpro
-fresh-options
+fresh jamesottaway/.osx .osx --file --ref=jamesbookpro
+fresh jasoncodes/dotfiles config/ackrc --file
 
 fresh-options --file=~/.gitconfig --marker
   fresh config/git/config
