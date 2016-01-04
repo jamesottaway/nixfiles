@@ -25,11 +25,14 @@ cask install java
 cask install karabiner
 cask install keepingyouawake
 cask install launchrocket
+cask install lighting
 cask install osxfuse
 cask install prey
+cask install silverlight
 cask install shortcat
 cask install slate
 cask install vlc
+cask install viscosity
 
 cask install android-studio
 cask install anvil
@@ -44,6 +47,7 @@ cask install vagrant
 
 cask install airfoil
 cask install arduino
+cask install cryptocat
 cask install daisydisk
 cask install evernote
 cask install fluid
