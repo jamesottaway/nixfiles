@@ -7,6 +7,9 @@ install chromedriver
 install chruby
 install ctags
 install dnscrypt-proxy
+install docker
+install docker-compose
+install docker-machine
 install git-extras
 install git-flow
 install go

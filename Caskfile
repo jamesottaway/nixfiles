@@ -14,6 +14,7 @@ cask install rdio
 cask install slack
 cask install steam
 cask install virtualbox
+cask install virtualbox-extension-pack
 
 cask install arq
 cask install bittorrent-sync

@@ -1,1 +1,1 @@
-export DOCKER_HOST=tcp://
+$(dinghy shellinit)
