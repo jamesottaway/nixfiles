@@ -17,12 +17,12 @@ cask install virtualbox
 
 cask install arq
 cask install bittorrent-sync
-cask install caffeine
 cask install crashplan
 cask install dropbox
 cask install flux
 cask install java
 cask install karabiner
+cask install keepingyouawake
 cask install launchrocket
 cask install osxfuse
 cask install prey
