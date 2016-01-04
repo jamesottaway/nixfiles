@@ -13,23 +13,26 @@ fresh aliases/\*
 
 fresh bin/ssid --bin
 
-fresh git/git contrib/diff-highlight/diff-highlight --bin
-fresh defunkt/repl bin/repl --bin
-fresh rtomayko/dotfiles bin/+x --bin
-fresh rtomayko/dotfiles bin/addr --bin
-fresh rtomayko/dotfiles bin/served --bin
-fresh jasoncodes/dotfiles bin/pidof --bin
-fresh jasoncodes/dotfiles bin/vol --bin
-fresh jasoncodes/dotfiles bin/incognito --bin
-fresh benhoskings/dot-files files/bin/gbrt --bin
-fresh rtomayko/dotfiles bin/lock-screen --bin
-fresh k4rthik/git-cal git-cal --bin
-fresh twe4ked/dotfiles bin/heroku-remote-add --bin
-fresh hackling/morse bin/morse --bin
-fresh garybernhardt/dotfiles bin/git-churn --bin
-fresh LuRsT/hr hr --bin
-fresh laurent22/rsync-time-backup rsync_tmbackup.sh --bin
-fresh jamesottaway/tmux-up tmux-up --bin
+fresh-options --bin
+  fresh git/git contrib/diff-highlight/diff-highlight
+  fresh defunkt/repl bin/repl
+  fresh rtomayko/dotfiles bin/+x
+  fresh rtomayko/dotfiles bin/addr
+  fresh rtomayko/dotfiles bin/served
+  fresh jasoncodes/dotfiles bin/pidof
+  fresh jasoncodes/dotfiles bin/vol
+  fresh jasoncodes/dotfiles bin/incognito
+  fresh benhoskings/dot-files files/bin/gbrt
+  fresh rtomayko/dotfiles bin/lock-screen
+  fresh k4rthik/git-cal git-cal
+  fresh twe4ked/dotfiles bin/heroku-remote-add
+  fresh hackling/morse bin/morse
+  fresh garybernhardt/dotfiles bin/git-churn
+  fresh LuRsT/hr hr
+  fresh laurent22/rsync-time-backup rsync_tmbackup.sh
+  fresh jamesottaway/tmux-up tmux-up
+fresh-options
+
 fresh sivel/speedtest-cli speedtest_cli.py --bin=~/bin/speedtest
 
 fresh config/curlrc --file
