@@ -1,4 +1,4 @@
-export GH_BASE=$HOME/src/github.com
+export GH=$HOME/src/github.com
 export GH_USER=jamesottaway
-export CDPATH=$CDPATH:$GH_BASE
-export CDPATH=$CDPATH:$GH_BASE/$GH_USER
+export CDPATH=$CDPATH:$GH
+export CDPATH=$CDPATH:$GH/$GH_USER
