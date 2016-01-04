@@ -1,4 +1,1 @@
 export GOPATH=$HOME
-export CDPATH=$CDPATH:$GOPATH/src/code.google.com/p
-export CDPATH=$CDPATH:$GOPATH/src/github.com
-export CDPATH=$CDPATH:$GOPATH/src/golang.org/x
