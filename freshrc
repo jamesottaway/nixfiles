@@ -53,7 +53,6 @@ fresh jasoncodes/dotfiles config/ackrc --file
 fresh-options --file=~/.gitconfig --marker
   fresh config/git/config
   fresh config/git/alias
-  fresh config/git/up
 fresh-options
 
 fresh jasoncodes/dotfiles bin/adduser --bin

@@ -20,3 +20,5 @@
   default = current
 [http]
   sslCAinfo = /Users/james/.nix-profile/etc/ca-bundle.crt
+[git-up "rebase"]
+  auto = false
