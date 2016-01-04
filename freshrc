@@ -81,7 +81,6 @@ fresh lib/dvcs
 fresh markryall/dotfiles shell/aliases/dvcs.sh
 
 fresh akatov/dotfiles zshrc/dedup-path
-fresh rupa/z z.sh
 
 fresh altercation/solarized iterm2-colors-solarized --file=iterm2-colors-solarized/
 
