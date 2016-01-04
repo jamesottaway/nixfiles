@@ -1,5 +1,0 @@
-function today() {
-  mkdir -p ~/.today
-  DATE=`date +%Y-%m-%d`
-  echo "$@" >> ~/.now/$DATE
-}
