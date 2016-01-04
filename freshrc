@@ -35,13 +35,15 @@ fresh-options
 
 fresh sivel/speedtest-cli speedtest_cli.py --bin=~/bin/speedtest
 
-fresh config/curlrc --file
-fresh config/gemrc --file
-fresh config/gitignore --file
-fresh config/nvmrc --file
-fresh config/ruby-version --file
-fresh config/slate --file
-fresh config/tmux.conf --file
+fresh-options --file
+  fresh config/curlrc
+  fresh config/gemrc
+  fresh config/gitignore
+  fresh config/nvmrc
+  fresh config/ruby-version
+  fresh config/slate
+  fresh config/tmux.conf
+fresh-options
 
 fresh jamesottaway/.osx .osx --file --ref=jamesbookpro
 fresh jasoncodes/dotfiles config/ackrc --file
