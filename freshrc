@@ -50,6 +50,7 @@ fresh jasoncodes/dotfiles config/tmux.conf --file
 
 fresh path/brew
 
+fresh shell/cdpath
 fresh shell/chruby
 fresh shell/docker
 fresh shell/golang
