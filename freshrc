@@ -15,16 +15,8 @@ fresh bin/ssid --bin
 
 fresh-options --bin
   fresh git/git contrib/diff-highlight/diff-highlight
-  fresh defunkt/repl bin/repl
-  fresh jasoncodes/dotfiles bin/vol
-  fresh jasoncodes/dotfiles bin/incognito
-  fresh k4rthik/git-cal git-cal
-  fresh garybernhardt/dotfiles bin/git-churn
-  fresh laurent22/rsync-time-backup rsync_tmbackup.sh
   fresh jamesottaway/tmux-up tmux-up
 fresh-options
-
-fresh sivel/speedtest-cli speedtest_cli.py --bin=~/bin/speedtest
 
 fresh-options --file
   fresh config/curlrc
@@ -44,8 +36,6 @@ fresh-options --file=~/.gitconfig --marker
   fresh config/git/alias
 fresh-options
 
-fresh jasoncodes/dotfiles bin/adduser --bin
-fresh jasoncodes/dotfiles bin/wemux/\* --bin
 fresh jasoncodes/dotfiles config/tmux.conf --file
 
 fresh path/brew
@@ -62,9 +52,6 @@ fresh shell/zsh/history
 fresh shell/zsh/options
 
 fresh nix/init
-
-fresh jasoncodes/dotfiles shell/aliases/rails.sh
-fresh jasoncodes/dotfiles shell/aliases/ruby.sh
 
 fresh functions/git
 fresh shell/zsh/completion/functions/git
@@ -95,8 +82,6 @@ fresh zsh-users/zsh-completions src/_virtualbox --file=completion/_virtualbox
 
 fresh lib/zsh-syntax-highlighting
 fresh zsh-users/zsh-syntax-highlighting . --file=zsh-syntax-highlighting/
-
-fresh Yelp/osxcollector osxcollector/osxcollector.py --bin
 
 fresh lib/pure
 fresh sindresorhus/pure pure.zsh --file=zsh/pure/prompt_pure_setup
