@@ -1,2 +1,1 @@
-export PATH=/brew/bin:$PATH
-export PATH=/brew/sbin:$PATH
+export PATH=//bin:/brew/sbin:/brew/opt/coreutils/libexec/gnubin:$PATH

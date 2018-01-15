@@ -1,0 +1,4 @@
+export EVERYDAYHERO=$HOME/src/github.com/everydayhero
+export PATH=$EVERYDAYHERO/plain-utils/bin:$PATH
+export PATH=$EVERYDAYHERO/plain-services-docker/bin:$PATH
+export PLAIN_LOCAL_CONFIGURE_LOCATION=$EVERYDAYHERO/configure

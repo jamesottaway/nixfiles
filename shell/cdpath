@@ -1,1 +1,1 @@
-export CDPATH=$CDPATH:$HOME/src
+export CDPATH=$HOME/src

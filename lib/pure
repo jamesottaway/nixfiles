@@ -1,3 +1,4 @@
 fpath=( "$HOME/.fresh/build/zsh/pure" $fpath )
 autoload -U promptinit && promptinit
+PURE_GIT_PULL=0
 prompt pure

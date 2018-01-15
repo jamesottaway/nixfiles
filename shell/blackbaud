@@ -1,0 +1,1 @@
+export CDPATH=$CDPATH:$HOME/src/blackbaud.visualstudio.com

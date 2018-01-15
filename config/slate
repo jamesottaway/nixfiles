@@ -6,12 +6,12 @@ config resizePercentOf screenSize
 
 # Abstract positions for later use within configuration.
 
-alias full move screenOriginX+(screenSizeX/10);screenOriginY+(screenSizeY/10) screenSizeX/10*8;screenSizeY/10*8
-alias left move screenOriginX;screenOriginY screenSizeX/3*2;screenSizeY
+alias full move screenOriginX+(screenSizeX/20);screenOriginY+(screenSizeY/20) screenSizeX/10*9;screenSizeY/10*9
+alias left move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
 alias right move screenOriginX+screenSizeX/3*1;screenOriginY screenSizeX/3*2;screenSizeY
 alias top move screenOriginX;screenOriginY screenSizeX;screenSizeY/3*2
 alias bottom move screenOriginX;screenOriginY+screenSizeY/3*1 screenSizeX;screenSizeY/3*2
-alias topleft corner top-left resize:screenSizeX/3*2;screenSizeY/3*2
+alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
 alias topright corner top-right resize:screenSizeX/3*2;screenSizeY/3*2
 alias bottomleft corner bottom-left resize:screenSizeX/3*2;screenSizeY/3*2
 alias bottomright corner bottom-right resize:screenSizeX/3*2;screenSizeY/3*2

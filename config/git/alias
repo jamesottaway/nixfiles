@@ -9,7 +9,7 @@
   co = checkout
   cp = cherry-pick
   d = diff
-  dc = diff --cached
+  ds = diff --staged
   discard = checkout --
   fixup = commit --fixup
   ffs = flow feature start
@@ -38,6 +38,7 @@
   squash = commit --squash
   uncommit = reset --soft HEAD^
   unstage = reset HEAD
+  up = pull --rebase --autostash
   who = shortlog -s -n --no-merges --
   snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
   snapshots = !git stash list --grep snapshot

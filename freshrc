@@ -15,14 +15,12 @@ fresh bin/ssid --bin
 
 fresh-options --bin
   fresh git/git contrib/diff-highlight/diff-highlight
-  fresh jamesottaway/tmux-up tmux-up
 fresh-options
 
 fresh-options --file
   fresh config/curlrc
   fresh config/gemrc
   fresh config/gitignore
-  fresh config/nvmrc
   fresh config/ruby-version
   fresh config/slate
   fresh config/tmux.conf
@@ -36,10 +34,9 @@ fresh-options --file=~/.gitconfig --marker
   fresh config/git/alias
 fresh-options
 
-fresh jasoncodes/dotfiles config/tmux.conf --file
+#fresh jasoncodes/dotfiles config/tmux.conf --file
 
-fresh path/brew
-
+fresh shell/convox
 fresh shell/cdpath
 fresh shell/chruby
 fresh shell/docker
@@ -48,10 +45,10 @@ fresh shell/npm
 fresh shell/options
 fresh shell/zsh/completion/init
 fresh shell/zsh/direnv
+fresh shell/everydayhero
+fresh shell/blackbaud
 fresh shell/zsh/history
 fresh shell/zsh/options
-
-fresh nix/init
 
 fresh functions/git
 fresh shell/zsh/completion/functions/git
@@ -87,4 +84,7 @@ fresh lib/pure
 fresh sindresorhus/pure pure.zsh --file=zsh/pure/prompt_pure_setup
 fresh sindresorhus/pure async.zsh --file=zsh/pure/async
 
-fresh creationix/nvm nvm.sh
+fresh jasoncodes/dotfiles hammerspoon/\*.lua --file=~/.hammerspoon/init.lua
+
+fresh creationix/nvm . --file=~/.nvm/
+fresh lib/nvm

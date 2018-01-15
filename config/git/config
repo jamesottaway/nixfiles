@@ -1,6 +1,6 @@
 [user]
   name = James Ottaway
-  email = git@james.ottaway.io
+  email = git@james.b12y.com
 [color]
   ui = true
 [github]
@@ -19,6 +19,8 @@
 [push]
   default = current
 [http]
-  sslCAinfo = /nix/var/nix/profiles/default/etc/ca-bundle.crt
+  sslVerify=false
 [git-up "rebase"]
   auto = false
+[credential]
+  helper = !/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/bin/java -Ddebug=false -Djava.net.useSystemProxies=true --add-modules java.xml.bind -jar /usr/local/Cellar/git-credential-manager/2.0.3/libexec/git-credential-manager-2.0.3.jar
