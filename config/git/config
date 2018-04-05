@@ -9,15 +9,18 @@
   conflictstyle = diff3
 [core]
   editor = vim
-  pager = diff-highlight | less -x1,3
+  pager = diff-so-fancy | less --tabs=4 -RFX
   autocrlf = input
   excludesfile = ~/.gitignore
 [rebase]
   autosquash = true
+  autostash = true
 [apply]
   whitespace = warn
 [push]
   default = current
+[fetch]
+  prune = true
 [http]
   sslVerify=false
 [git-up "rebase"]

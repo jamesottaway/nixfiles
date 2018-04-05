@@ -40,6 +40,7 @@ fresh shell/convox
 fresh shell/cdpath
 fresh shell/chruby
 fresh shell/docker
+fresh shell/fzf
 fresh shell/golang
 fresh shell/npm
 fresh shell/options
