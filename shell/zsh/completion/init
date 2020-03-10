@@ -1,3 +1,0 @@
-zstyle :compinstall filename '/Users/james/.zshrc'
-autoload -Uz compinit
-compinit
