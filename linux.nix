@@ -21,12 +21,7 @@
 
   programs = {
     password-store.enable = true;
-
-    zsh = {
-      envExtra = ''
-        . /home/james/.nix-profile/etc/profile.d/nix.sh
-      '';
-    };
+    vim.enable = true;
 
     gpg = {
       enable = true;

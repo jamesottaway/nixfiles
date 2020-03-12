@@ -7,13 +7,22 @@
     sessionVariables = {
       EDITOR = "code";
     };
+
+    packages = with pkgs; [
+      lorri
+    ];
   };
 
   programs = {
-    zsh = {
-      envExtra = ''
-        . /home/james/.nix-profile/etc/profile.d/nix.sh
-      '';
+    alacritty = {
+      enable = true;
+      settings = {
+        window.startup_mode = "Maximized";
+      };
+    };
+
+    tmux = {
+      secureSocket = false;
     };
   };
 }

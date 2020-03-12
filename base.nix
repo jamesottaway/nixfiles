@@ -28,6 +28,9 @@
       defaultKeymap = "viins";
       dotDir = ".config/zsh";
       initExtra = builtins.readFile ./zshrc;
+      envExtra = ''
+        . ~/.nix-profile/etc/profile.d/nix.sh
+      '';
       history = {
         ignoreDups = true;
       };
@@ -38,10 +41,6 @@
     };
 
     gpg = {
-      enable = true;
-    };
-
-    vim = {
       enable = true;
     };
 
