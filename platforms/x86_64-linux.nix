@@ -1,8 +1,6 @@
 { pkgs, config, ... }:
 
 {
-  imports = [ ./base.nix ];
-
   xdg.enable = true;
 
   home = {

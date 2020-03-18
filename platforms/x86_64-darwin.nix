@@ -1,8 +1,6 @@
 { pkgs, ... }:
 
 {
-  imports = [ ./base.nix ];
-
   home = {
     sessionVariables = {
       EDITOR = "code";
