@@ -37,6 +37,7 @@ in
         initExtra = builtins.readFile ./zshrc;
         history = {
           ignoreDups = true;
+          share = false;
         };
         shellAliases = {
           cat = "bat";
