@@ -5,6 +5,7 @@
     programs/alacritty.nix
     programs/bat.nix
     programs/exa.nix
+    programs/vim.nix
     programs/zsh.nix
   ];
 
@@ -18,6 +19,5 @@
     gpg.enable = true;
     jq.enable = true;
     starship.enable = true;
-    vim.enable = true;
   };
 }

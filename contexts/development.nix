@@ -3,6 +3,11 @@
 {
   xdg.enable = true;
 
+  imports = [
+    ../programs/git.nix
+    ../programs/tmux.nix
+  ];
+
   home.packages = with pkgs; [
     aws-vault
     tmux-up
