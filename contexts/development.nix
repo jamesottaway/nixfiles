@@ -6,6 +6,7 @@
   imports = [
     ../programs/git.nix
     ../programs/tmux.nix
+    ../programs/vscode.nix
   ];
 
   home.packages = with pkgs; [
