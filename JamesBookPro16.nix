@@ -1,9 +1,8 @@
 {
-  environment.darwinConfig = "/etc/macos/JamesBookAir.nix";
+  environment.darwinConfig = "/etc/macos/JamesBookPro16.nix";
 
   imports = [
     ./base.nix
-    ./launchd/lorri.nix
     ./platforms/darwin.nix
     ./programs/gnupg.nix
   ];
