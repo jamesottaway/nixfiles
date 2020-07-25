@@ -14,6 +14,7 @@
       s = "status --short";
     };
     extraConfig = {
+      checkout.defaultRemote = "origin";
       merge.conflictstyle = "diff3";
       push.default = "current";
       rebase.autosquash = true;
