@@ -15,4 +15,8 @@
     tmux-up
     yubikey-manager
   ];
+
+  programs.zsh.cdpath = [
+    "~/src/github.com"
+  ];
 }
