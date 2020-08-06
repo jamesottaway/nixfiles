@@ -4,6 +4,7 @@
   xdg.enable = true;
 
   imports = [
+    ../programs/direnv.nix
     ../programs/git.nix
     ../programs/tmux.nix
     ../programs/vscode.nix
@@ -14,8 +15,4 @@
     tmux-up
     yubikey-manager
   ];
-
-  programs = {
-    direnv.enable = true;
-  };
 }
