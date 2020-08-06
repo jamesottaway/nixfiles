@@ -6,7 +6,7 @@
     programs/bat.nix
     programs/exa.nix
     programs/vim.nix
-    programs/zsh.nix
+    programs/zsh
   ];
 
   home.packages = with pkgs; [
