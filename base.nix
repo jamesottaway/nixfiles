@@ -13,6 +13,7 @@ in
 
   environment.systemPackages = [
     pkgs.home-manager
+    pkgs.niv
   ];
 
   programs = {
