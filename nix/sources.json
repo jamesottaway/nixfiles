@@ -1,4 +1,16 @@
 {
+    "darwin": {
+        "branch": "master",
+        "description": "nix modules for darwin",
+        "homepage": "",
+        "owner": "jamesottaway",
+        "repo": "nix-darwin",
+        "rev": "86350b9a8ea2dc17afa61acedb173d358d19ea47",
+        "sha256": "0lzmmskj180x7ynk53y3iqpwnacygvj9jiyqhgxpcmjb1han7n26",
+        "type": "tarball",
+        "url": "https://github.com/jamesottaway/nix-darwin/archive/86350b9a8ea2dc17afa61acedb173d358d19ea47.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "nixpkgs": {
         "branch": "nixos-unstable",
         "description": "A read-only mirror of NixOS/nixpkgs tracking the released channels. Send issues and PRs to",
