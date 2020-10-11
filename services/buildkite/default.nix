@@ -2,6 +2,9 @@
   services.buildkite-agent = {
     enable = true;
     tokenPath = ./token;
+    extraConfig = ''
+      no-pty=true
+    '';
     openssh = {
       publicKeyPath = "/dev/null";
       privateKeyPath = "/dev/null";
