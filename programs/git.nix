@@ -24,6 +24,7 @@
       status.short = true;
     };
     ignores = [
+      "result"
       "node_modules/"
     ];
   };
