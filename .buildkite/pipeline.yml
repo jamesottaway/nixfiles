@@ -1,0 +1,6 @@
+steps:
+  - label: ":nix: b12y-MBP"
+    command: "nix-build -I darwin-config=./b12y-MBP.nix tests/darwin.nix"
+
+  - label: ":nix: JamesBookPro16"
+    command: "nix-build -I darwin-config=./JamesBookPro16.nix tests/darwin.nix"
