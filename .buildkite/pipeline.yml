@@ -1,0 +1,6 @@
+steps:
+  - label: ":nix: b12y-MBP"
+    command: "nix-shell --command 'home-manager build -f b12y-MBP.nix'"
+
+  - label: ":nix: JamesBookPro16"
+    command: "nix-shell --command 'home-manager build -f JamesBookPro16.nix'"
