@@ -12,7 +12,6 @@
 
   home.packages = with pkgs; [
     aws-vault
-    tmux-up
     yubikey-manager
   ];
 
