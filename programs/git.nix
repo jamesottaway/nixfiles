@@ -25,6 +25,7 @@
     };
     ignores = [
       "result"
+      ".direnv"
       "node_modules/"
     ];
   };
