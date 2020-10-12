@@ -9,10 +9,14 @@
     programs/zsh
   ];
 
-  home.packages = with pkgs; [
-    fd
-    ripgrep
-  ];
+  home = {
+    username = "James";
+
+    packages = with pkgs; [
+      fd
+      ripgrep
+    ];
+  };
 
   programs = {
     fzf.enable = true;
