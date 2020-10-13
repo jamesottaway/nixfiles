@@ -4,6 +4,11 @@
   system.defaults.NSGlobalDomain = {
     AppleFontSmoothing = 0;
     AppleShowScrollBars = "Always";
+    "com.apple.springing.delay" = "0";
+    "com.apple.springing.enabled" = true;
+    "com.apple.swipescrolldirection" = false;
+    KeyRepeat = 1;
+    InitialKeyRepeat = 10;
     NSAutomaticCapitalizationEnabled = false;
     NSAutomaticDashSubstitutionEnabled = false;
     NSAutomaticPeriodSubstitutionEnabled = false;
@@ -16,9 +21,6 @@
     NSWindowResizeTime = "0.01";
     PMPrintingExpandedStateForPrint = true;
     PMPrintingExpandedStateForPrint2 = true;
-    "com.apple.springing.delay" = "0";
-    "com.apple.springing.enabled" = true;
-    "com.apple.swipescrolldirection" = false;
   };
 
   system.defaults.dock = {
@@ -38,6 +40,6 @@
 
   system.keyboard = {
     enableKeyMapping = true;
-    remapCapsLockToEscape = true;
+    remapCapsLockToControl = true;
   };
 }
