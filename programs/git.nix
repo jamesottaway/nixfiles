@@ -8,6 +8,7 @@
       a = "add";
       amend = "commit --amend";
       cm = "commit --message";
+      cp = "cherry-pick";
       co = "checkout";
       d = "diff";
       ds = "diff --staged";
@@ -17,6 +18,7 @@
     };
     extraConfig = {
       checkout.defaultRemote = "origin";
+      credential.helper = "osxkeychain";
       init.defaultBranch = "main";
       merge.conflictstyle = "diff3";
       push.default = "current";
