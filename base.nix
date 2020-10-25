@@ -10,6 +10,7 @@ in
   ];
 
   nixpkgs.pkgs = import sources.nixpkgs {};
+  nix.nixPath = [ "darwin=${sources.darwin}" ];
 
   environment.systemPackages = [
     pkgs.home-manager
