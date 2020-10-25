@@ -3,6 +3,7 @@
 
   system.defaults.NSGlobalDomain = {
     AppleFontSmoothing = 0;
+    AppleKeyboardUIMode = 3;
     AppleShowScrollBars = "Always";
     "com.apple.springing.delay" = "0";
     "com.apple.springing.enabled" = true;
