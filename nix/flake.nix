@@ -5,6 +5,4 @@
   nix.extraOptions = ''
     experimental-features = nix-command flakes
   '';
-
-  system.checks.verifyNixPath = false;
 }
