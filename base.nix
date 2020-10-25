@@ -10,6 +10,8 @@ in
     ./nix/flake.nix
   ];
 
+  nix.nixPath = [ "darwin=/dev/null" ];
+
   environment.systemPackages = [
     pkgs.home-manager
     pkgs.niv
