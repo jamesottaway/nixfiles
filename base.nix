@@ -7,6 +7,7 @@ in
 {
   imports = [
     ./users
+    ./nix/flake.nix
   ];
 
   nixpkgs.pkgs = import sources.nixpkgs {};
