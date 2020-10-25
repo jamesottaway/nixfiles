@@ -10,7 +10,6 @@ in
     ./nix/flake.nix
   ];
 
-  nixpkgs.pkgs = import sources.nixpkgs {};
   nix.nixPath = [ "darwin=${sources.darwin}" ];
 
   environment.systemPackages = [

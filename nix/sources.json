@@ -3,12 +3,12 @@
         "branch": "master",
         "description": "nix modules for darwin",
         "homepage": "",
-        "owner": "jamesottaway",
+        "owner": "LnL7",
         "repo": "nix-darwin",
-        "rev": "234557dd8f6d31ea78783ef0391ae17521149c26",
-        "sha256": "1dv04m1yg2wj61x31qcrl2j1n3hy0ljk2r41b5wn1rrnf0fsnsss",
+        "rev": "b346a283a8b04d8ca2a73c86c6fde53a5383f852",
+        "sha256": "0ql04696xlkwkfqinb9qc86gnhl9dj2qzmy0bxc4sf3q6ar529f4",
         "type": "tarball",
-        "url": "https://github.com/jamesottaway/nix-darwin/archive/234557dd8f6d31ea78783ef0391ae17521149c26.tar.gz",
+        "url": "https://github.com/LnL7/nix-darwin/archive/b346a283a8b04d8ca2a73c86c6fde53a5383f852.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {
