@@ -1,6 +1,10 @@
 steps:
-  - label: ":nix: b12y-MBP"
-    command: "nix-build -I darwin-config=./b12y-MBP.nix tests/darwin.nix"
+  - label: ":macos: b12y-MBP"
+    commands:
+    - "darwin-rebuild build --flake .#b12y-MBP"
+    - "darwin-rebuild check --flake .#b12y-MBP"
 
-  - label: ":nix: JamesBookPro16"
-    command: "nix-build -I darwin-config=./JamesBookPro16.nix tests/darwin.nix"
+  - label: ":macos: JamesBookPro16"
+    commands:
+    - "darwin-rebuild build --flake .#JamesBookPro16"
+    - "darwin-rebuild check --flake .#JamesBookPro16"
