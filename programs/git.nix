@@ -21,6 +21,7 @@
       credential.helper = "osxkeychain";
       init.defaultBranch = "main";
       merge.conflictstyle = "diff3";
+      pull.rebase = false;
       push.default = "current";
       rebase.autosquash = true;
       status.short = true;
