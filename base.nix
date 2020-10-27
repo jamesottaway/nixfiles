@@ -11,7 +11,6 @@ in
   ];
 
   environment.systemPackages = [
-    pkgs.niv
   ];
 
   programs = {
