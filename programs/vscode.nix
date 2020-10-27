@@ -22,8 +22,6 @@ in
     extensions = with vscode-extensions; [
       arrterian.nix-env-selector
       bbenoist.Nix
-      ms-vscode-remote.remote-ssh
-      redhat.vscode-yaml
       vscodevim.vim
     ];
   };
