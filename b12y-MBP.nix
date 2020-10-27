@@ -3,7 +3,6 @@
 
   imports = [
     ./base.nix
-    ./launchd/lorri.nix
     ./platforms/darwin.nix
     ./programs/gnupg.nix
     ./services/buildkite
