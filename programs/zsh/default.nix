@@ -10,5 +10,8 @@
       ignoreDups = true;
       share = false;
     };
+    localVariables = {
+      RPS1 = "";
+    };
   };
 }
