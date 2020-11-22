@@ -1,10 +1,13 @@
+env:
+  checkActivation: 1
+
 steps:
   - label: ":macos: b12y-MBP"
     commands:
-    - "darwin-rebuild build --flake .#b12y-MBP"
-    - "darwin-rebuild check --flake .#b12y-MBP"
+      - "nix build .#darwinConfigurations.b12y-MBP.system"
+      - "result/activate-user"
 
   - label: ":macos: JamesBookPro16"
     commands:
-    - "darwin-rebuild build --flake .#JamesBookPro16"
-    - "darwin-rebuild check --flake .#JamesBookPro16"
+      - "nix build .#darwinConfigurations.JamesBookPro16.system"
+      - "result/activate-user"
