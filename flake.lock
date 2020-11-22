@@ -21,6 +21,21 @@
         "type": "github"
       }
     },
+    "devshell": {
+      "locked": {
+        "lastModified": 1605514881,
+        "narHash": "sha256-VQSDuxbQyQfLdYSNZUdfnvN9CFU8ZjItkP394LpimTk=",
+        "owner": "numtide",
+        "repo": "devshell",
+        "rev": "7045ccb2c3ed824d7b46bb35821e84676118de9e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "devshell",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1605907947,
@@ -40,6 +55,7 @@
     "root": {
       "inputs": {
         "darwin": "darwin",
+        "devshell": "devshell",
         "nixpkgs": "nixpkgs",
         "ulid": "ulid"
       }
