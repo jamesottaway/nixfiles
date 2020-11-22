@@ -1,7 +1,9 @@
+{ config, ... }:
+
 {
   services.buildkite-agent = {
     enable = true;
-    tokenPath = ./token;
+    tokenPath = config.users.users.buildkite-agent.home + "/token";
     extraConfig = ''
       no-pty=true
     '';
