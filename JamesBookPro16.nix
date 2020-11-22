@@ -8,6 +8,7 @@
 
   programs.home-manager.enable = true;
 
+  home.stateVersion = "20.09";
   home.sessionVariables = {
     HOME_MANAGER_CONFIG = "$HOME/.dotfiles/JamesBookPro16.nix";
   };

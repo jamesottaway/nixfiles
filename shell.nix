@@ -1,15 +1,10 @@
-let
-  sources = import ./nix/sources.nix;
-  pkgs = import sources.nixpkgs {};
-  home-manager = import sources.home-manager { inherit pkgs; };
-in
+{ pkgs, lib }:
 
-pkgs.mkShell {
-  buildInputs = [
-    home-manager.home-manager
+pkgs.mkDevShell {
+  packages = [
+    pkgs.buildkite-cli
   ];
 
-  shellHook = ''
-    export NIX_PATH="nixpkgs=${sources.nixpkgs}"
-  '';
+  motd = "";
+  commands = lib.mkForce [];
 }
