@@ -1,8 +1,9 @@
-{ config, ... }:
+{ pkgs, config, ... }:
 
 {
   services.buildkite-agent = {
     enable = true;
+    runtimePackages = [ pkgs.nixFlakes ];
     tokenPath = config.users.users.buildkite-agent.home + "/token";
     extraConfig = ''
       no-pty=true
