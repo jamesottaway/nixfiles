@@ -1,5 +1,6 @@
 {
   environment.darwinConfig = "/etc/macos/JamesBookPro16.nix";
+  networking.hostName = "JamesBookPro16";
 
   imports = [
     ./base.nix
