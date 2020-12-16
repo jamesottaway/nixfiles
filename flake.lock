@@ -51,11 +51,54 @@
         "type": "github"
       }
     },
+    "darwin": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1603626999,
+        "narHash": "sha256-pREWehzmdm1Shk4hBdZRB1dkTdhUxas5lK0Zgu4PNPU=",
+        "owner": "LnL7",
+        "repo": "nix-darwin",
+        "rev": "0dba44e04c33a69ec4c46e43de0ed024c1f7b75e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "LnL7",
+        "ref": "master",
+        "repo": "nix-darwin",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
+        "darwin": "darwin",
         "devshell": "devshell",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "ulid": "ulid"
+      }
+    },
+    "ulid": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1605955104,
+        "narHash": "sha256-EyZvJ2zw1DfbSGtIU8/UTrwn1Y7N6G/NmBaAX8C0UBg=",
+        "owner": "jamesottaway",
+        "repo": "ulid",
+        "rev": "b9f4ea9b9548169f3fcbcc20b8859427b489f91f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jamesottaway",
+        "repo": "ulid",
+        "type": "github"
       }
     }
   },
