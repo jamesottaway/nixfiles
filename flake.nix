@@ -1,6 +1,7 @@
 {
   inputs = {
     nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
+    nixos.url = github:NixOS/nixpkgs/nixos-20.09;
 
     darwin = {
       url = github:LnL7/nix-darwin/master;
@@ -22,7 +23,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, darwin, home-manager, hireup, armada, ... }: {
+  outputs = { self, nixpkgs, nixos, darwin, home-manager, hireup, armada, ... }: {
     darwinConfigurations = {
       b12y = darwin.lib.darwinSystem {
         modules = [
@@ -77,6 +78,13 @@
           ./home/shell.nix
           hireup.lib.homeManagerConfiguration
         ];
+      };
+    };
+
+    nixosConfigurations = {
+      nuc = nixos.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [ ./homelab/configuration.nix ];
       };
     };
 

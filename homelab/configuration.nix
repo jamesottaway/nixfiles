@@ -20,7 +20,6 @@
       ./nzbget.nix
       ./users/james.nix
       ./sudo.nix
-      ./home-manager.nix
       ./dnsmasq.nix
     ];
 
