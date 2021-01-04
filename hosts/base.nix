@@ -1,6 +1,7 @@
 {
   imports = [
     ../nix/flake.nix
+    ../nix/config.nix
     ../programs/gnupg.nix
   ];
 

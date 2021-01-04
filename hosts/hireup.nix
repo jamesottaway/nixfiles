@@ -3,6 +3,7 @@
 
   imports = [
     ./base.nix
+    ../services/skhd.nix
     ../services/yabai.nix
   ];
 }
