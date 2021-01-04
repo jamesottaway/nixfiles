@@ -1,10 +1,10 @@
 steps:
-  - label: ":nix: b12y-MBP"
-    command: "nix build .#homeManagerConfigurations.b12y-MBP.activationPackage"
+  - label: ":nix: homeManagerConfigurations.b12y"
+    command: "nix build .#homeManagerConfigurations.b12y.activationPackage"
 
-  - label: ":macos: b12y-MBP"
+  - label: ":nix: darwinConfigurations.b12y"
     commands:
-      - "nix build .#darwinConfigurations.b12y-MBP.system"
+      - "nix build .#darwinConfigurations.b12y.system"
       - "result/activate-user"
     env:
       checkActivation: 1

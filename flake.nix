@@ -25,9 +25,9 @@
     };
   in
   {
-    darwinConfigurations.b12y-MBP = darwin.lib.darwinSystem {
+    darwinConfigurations.b12y = darwin.lib.darwinSystem {
       modules = [
-        ./hosts/b12y-MBP.nix
+        ./hosts/b12y.nix
         inputs.ulid.module
       ];
     };
@@ -36,9 +36,9 @@
       modules = [ ./hosts/hireup.nix ];
     };
 
-    homeManagerConfigurations.b12y-MBP = home-manager.lib.homeManagerConfiguration {
+    homeManagerConfigurations.b12y = home-manager.lib.homeManagerConfiguration {
       inherit homeDirectory system username;
-      configuration = ./home/b12y-MBP.nix;
+      configuration = ./home/b12y.nix;
     };
 
     homeManagerConfigurations.hireup = home-manager.lib.homeManagerConfiguration rec {
