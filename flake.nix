@@ -15,13 +15,9 @@
 
   outputs = { home-manager, nixpkgs, darwin, ... }@inputs:
   let
-    homeDirectory = /Users/james;
-    system = "x86_64-darwin";
-    username = "James";
-
     pkgs = import nixpkgs {
       overlays = [ inputs.devshell.overlay ];
-      inherit system;
+      system = "x86_64-darwin";
     };
   in
   {
@@ -36,9 +32,11 @@
       modules = [ ./hosts/hireup.nix ];
     };
 
-    homeManagerConfigurations.b12y = home-manager.lib.homeManagerConfiguration {
-      inherit homeDirectory system username;
+    homeManagerConfigurations.b12y = home-manager.lib.homeManagerConfiguration rec {
       configuration = ./home/b12y.nix;
+      homeDirectory = "/Users/${username}";
+      username = "james";
+      system = "x86_64-darwin";
     };
 
     homeManagerConfigurations.hireup = home-manager.lib.homeManagerConfiguration rec {
@@ -48,6 +46,6 @@
       system = "x86_64-darwin";
     };
 
-    devShell.${system} = pkgs.callPackage ./shell.nix {};
+    devShell.x86_64-darwin = pkgs.callPackage ./shell.nix {};
   };
 }
