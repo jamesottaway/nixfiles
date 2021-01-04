@@ -1,10 +1,7 @@
 {
   imports = [
-    ../users
     ../nix/flake.nix
-  ];
-
-  environment.systemPackages = [
+    ../programs/gnupg.nix
   ];
 
   programs = {

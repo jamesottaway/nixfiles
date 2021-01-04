@@ -11,12 +11,10 @@
     ../programs/zsh
   ];
 
-  home = {
-    packages = with pkgs; [
-      fd
-      ripgrep
-    ];
-  };
+  home.packages = with pkgs; [
+    fd
+    ripgrep
+  ];
 
   programs = {
     fzf.enable = true;

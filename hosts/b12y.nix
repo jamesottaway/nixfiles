@@ -3,8 +3,7 @@
 
   imports = [
     ./base.nix
-    ../platforms/darwin.nix
-    ../programs/gnupg.nix
-    ../services/buildkite
+    ../services/buildkite.nix
+    ../users/james.nix
   ];
 }

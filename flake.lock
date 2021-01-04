@@ -77,28 +77,7 @@
         "darwin": "darwin",
         "devshell": "devshell",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs",
-        "ulid": "ulid"
-      }
-    },
-    "ulid": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1605955104,
-        "narHash": "sha256-EyZvJ2zw1DfbSGtIU8/UTrwn1Y7N6G/NmBaAX8C0UBg=",
-        "owner": "jamesottaway",
-        "repo": "ulid",
-        "rev": "b9f4ea9b9548169f3fcbcc20b8859427b489f91f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "jamesottaway",
-        "repo": "ulid",
-        "type": "github"
+        "nixpkgs": "nixpkgs"
       }
     }
   },
