@@ -1,19 +1,10 @@
-env:
-  checkActivation: 1
-
 steps:
   - label: ":nix: b12y-MBP"
     command: "nix build .#homeManagerConfigurations.b12y-MBP.activationPackage"
-
-  - label: ":nix: JamesBookPro16"
-    command: "nix build .#homeManagerConfigurations.JamesBookPro16.activationPackage"
 
   - label: ":macos: b12y-MBP"
     commands:
       - "nix build .#darwinConfigurations.b12y-MBP.system"
       - "result/activate-user"
-
-  - label: ":macos: JamesBookPro16"
-    commands:
-      - "nix build .#darwinConfigurations.JamesBookPro16.system"
-      - "result/activate-user"
+    env:
+      checkActivation: 1

@@ -36,25 +36,16 @@
       modules = [ ./hosts/hireup.nix ];
     };
 
-    darwinConfigurations.JamesBookPro16 = darwin.lib.darwinSystem {
-      modules = [ ./hosts/JamesBookPro16.nix ];
-    };
-
     homeManagerConfigurations.b12y-MBP = home-manager.lib.homeManagerConfiguration {
       inherit homeDirectory system username;
       configuration = ./home/b12y-MBP.nix;
     };
 
     homeManagerConfigurations.hireup = home-manager.lib.homeManagerConfiguration rec {
-      configuration = ./home/JamesBookPro16.nix;
+      configuration = ./home/hireup.nix;
       homeDirectory = "/Users/${username}";
       username = "jamesottaway";
       system = "x86_64-darwin";
-    };
-
-    homeManagerConfigurations.JamesBookPro16 = home-manager.lib.homeManagerConfiguration {
-      inherit homeDirectory system username;
-      configuration = ./home/JamesBookPro16.nix;
     };
 
     devShell.${system} = pkgs.callPackage ./shell.nix {};
