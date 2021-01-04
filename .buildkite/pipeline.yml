@@ -8,3 +8,13 @@ steps:
       - "result/activate-user"
     env:
       checkActivation: 1
+
+  - label: ":nix: homeManagerConfigurations.hireup"
+    command: "nix build .#homeManagerConfigurations.hireup.activationPackage"
+
+  - label: ":nix: darwinConfigurations.hireup"
+    commands:
+      - "nix build .#darwinConfigurations.hireup.system"
+      - "result/activate-user"
+    env:
+      checkActivation: 1
