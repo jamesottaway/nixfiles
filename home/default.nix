@@ -12,8 +12,6 @@
   ];
 
   home = {
-    username = "James";
-
     packages = with pkgs; [
       fd
       ripgrep

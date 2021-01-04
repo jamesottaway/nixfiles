@@ -1,0 +1,6 @@
+{
+  imports = [
+    ./.
+    ../contexts/hireup.nix
+  ];
+}

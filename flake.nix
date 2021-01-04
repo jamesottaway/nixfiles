@@ -45,6 +45,13 @@
       configuration = ./home/b12y-MBP.nix;
     };
 
+    homeManagerConfigurations.hireup = home-manager.lib.homeManagerConfiguration rec {
+      configuration = ./home/JamesBookPro16.nix;
+      homeDirectory = "/Users/${username}";
+      username = "jamesottaway";
+      system = "x86_64-darwin";
+    };
+
     homeManagerConfigurations.JamesBookPro16 = home-manager.lib.homeManagerConfiguration {
       inherit homeDirectory system username;
       configuration = ./home/JamesBookPro16.nix;
