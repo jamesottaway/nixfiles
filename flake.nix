@@ -32,6 +32,10 @@
       ];
     };
 
+    darwinConfigurations.hireup = darwin.lib.darwinSystem {
+      modules = [ ./hosts/hireup.nix ];
+    };
+
     darwinConfigurations.JamesBookPro16 = darwin.lib.darwinSystem {
       modules = [ ./hosts/JamesBookPro16.nix ];
     };
