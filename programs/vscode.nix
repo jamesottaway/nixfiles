@@ -24,5 +24,8 @@ in
       bbenoist.Nix
       vscodevim.vim
     ];
+    userSettings = {
+      workbench.colorTheme = "Solarized Dark";
+    };
   };
 }
