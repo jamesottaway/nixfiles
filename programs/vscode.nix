@@ -25,7 +25,11 @@ in
       vscodevim.vim
     ];
     userSettings = {
+      editor.rulers = [ 80 120 ];
+      telemetry.enableTelemetry = false;
+      vim.easymotion = true;
       workbench.colorTheme = "Solarized Dark";
+      editor.minimap.enabled = false;
     };
   };
 }
