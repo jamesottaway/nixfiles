@@ -12,10 +12,11 @@
       yabai -m rule --add app='Firefox' title='^Opening' manage=off
       yabai -m rule --add app='Firefox' title='Picture-in-Picture' manage=off
       yabai -m rule --add app='Wally' manage=off
-      yabai -m rule --add app='1Password' title='Preferences' manage=off
+      yabai -m rule --add app='1Password' manage=off
       yabai -m rule --add app='MeetingBar' title='MeetingBar Preferences' manage=off
       yabai -m rule --add app='Docker Desktop' title='Settings' manage=off
       yabai -m rule --add app='Spotify' manage=off
+      yabai -m rule --add app='Aviatrix VPN Client' manage=off
     '';
   };
 }
