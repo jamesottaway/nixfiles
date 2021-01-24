@@ -15,8 +15,6 @@ let
 in
 
 {
-  nixpkgs.config.allowUnfree = true;
-
   programs.vscode = {
     enable = true;
     extensions = with vscode-extensions; [
