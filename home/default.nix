@@ -8,6 +8,7 @@
     ./programs/exa.nix
     ./programs/git.nix
     ./programs/hammerspoon.nix
+    ./programs/starship.nix
     ./programs/tmux.nix
     ./programs/vim.nix
     ./programs/vscode.nix
@@ -29,7 +30,6 @@
     fzf.enable = true;
     gpg.enable = true;
     jq.enable = true;
-    starship.enable = true;
     zsh.cdpath = [ "~/src/github.com" ];
   };
 
