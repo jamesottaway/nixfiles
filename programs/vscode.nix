@@ -26,8 +26,10 @@ in
       editor.rulers = [ 80 120 ];
       telemetry.enableTelemetry = false;
       vim.easymotion = true;
-      workbench.colorTheme = "Solarized Dark";
+      workbench.colorTheme = "Solarized Light";
       editor.minimap.enabled = false;
+      editor.fontSize = 16;
+      editor.renderWhitespace = "boundary";
     };
   };
 }
