@@ -30,6 +30,7 @@ in
       editor.minimap.enabled = false;
       editor.fontSize = 16;
       editor.renderWhitespace = "boundary";
+      editor.fontFamily = "JetBrains Mono";
     };
   };
 }
