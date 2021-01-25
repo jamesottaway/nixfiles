@@ -23,14 +23,35 @@ in
       vscodevim.vim
     ];
     userSettings = {
+      editor.fontFamily = "JetBrains Mono";
+      editor.fontLigatures = false;
+      editor.fontSize = 16;
+      editor.formatOnSave = true;
+      editor.minimap.enabled = false;
+      editor.renderFinalNewline = false;
+      editor.renderWhitespace = "boundary";
       editor.rulers = [ 80 120 ];
+      editor.scrollBeyondLastLine = false;
+      editor.smoothScrolling = true;
+      editor.tabSize = 2;
+      explorer.openEditors.visible = 0;
+      files.exclude = {
+        "**/result" = true;
+      };
+      files.insertFinalNewline = true;
+      files.trimFinalNewlines = true;
+      markdown.preview.doubleClickToSwitchToEditor = false;
+      merge-conflict.codeLens.enabled = false;
       telemetry.enableTelemetry = false;
       vim.easymotion = true;
-      workbench.colorTheme = "Solarized Light";
-      editor.minimap.enabled = false;
-      editor.fontSize = 16;
-      editor.renderWhitespace = "boundary";
-      editor.fontFamily = "JetBrains Mono";
+      vim.easymotionMarkerFontFamily = "JetBrains Mono";
+      window.autoDetectColorScheme = true;
+      window.titleBarStyle = "native";
+      workbench.enableExperiments = false;
+      workbench.preferredDarkColorTheme = "Solarized Dark";
+      workbench.preferredLightColorTheme = "Solarized Light";
+      workbench.settings.enableNaturalLanguageSearch = false;
+      workbench.startupEditor = "readme";
     };
   };
 }
