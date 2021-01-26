@@ -20,7 +20,6 @@ in
     extensions = with vscode-extensions; [
       arrterian.nix-env-selector
       bbenoist.Nix
-      vscodevim.vim
     ];
     userSettings = {
       editor.fontLigatures = false;
