@@ -45,11 +45,8 @@ in
       telemetry.enableTelemetry = false;
       vim.easymotion = true;
       vim.easymotionMarkerFontFamily = "JetBrains Mono";
-      window.autoDetectColorScheme = true;
       window.titleBarStyle = "native";
       workbench.enableExperiments = false;
-      workbench.preferredDarkColorTheme = "Solarized Dark";
-      workbench.preferredLightColorTheme = "Solarized Light";
       workbench.settings.enableNaturalLanguageSearch = false;
       workbench.startupEditor = "readme";
     };

@@ -12,6 +12,7 @@
     ./programs/vim.nix
     ./programs/vscode.nix
     ./programs/zsh
+    ./misc/solarized.nix
   ];
 
   xdg.enable = true;
