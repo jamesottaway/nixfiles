@@ -23,7 +23,6 @@ in
       vscodevim.vim
     ];
     userSettings = {
-      editor.fontFamily = "JetBrains Mono";
       editor.fontLigatures = false;
       editor.fontSize = 16;
       editor.formatOnSave = true;
@@ -44,7 +43,6 @@ in
       merge-conflict.codeLens.enabled = false;
       telemetry.enableTelemetry = false;
       vim.easymotion = true;
-      vim.easymotionMarkerFontFamily = "JetBrains Mono";
       window.titleBarStyle = "native";
       workbench.enableExperiments = false;
       workbench.settings.enableNaturalLanguageSearch = false;
