@@ -32,4 +32,6 @@
       "node_modules/"
     ];
   };
+
+  programs.zsh.initExtra = builtins.readFile ../misc/git.zsh;
 }

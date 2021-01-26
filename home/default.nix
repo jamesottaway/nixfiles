@@ -11,7 +11,7 @@
     ./programs/tmux.nix
     ./programs/vim.nix
     ./programs/vscode.nix
-    ./programs/zsh
+    ./programs/zsh.nix
     ./misc/jetbrains.nix
     ./misc/solarized.nix
   ];
