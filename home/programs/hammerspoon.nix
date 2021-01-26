@@ -1,5 +1,7 @@
 {
-  home.file.".hammerspoon/init.lua".source = ./init.lua;
+  home.file.".hammerspoon/init.lua".text = ''
+    hs.loadSpoon('ControlEscape'):start()
+  '';
 
   home.file.".hammerspoon/Spoons/ControlEscape.spoon".source = builtins.fetchTarball {
     url = "https://github.com/jasonrudolph/ControlEscape.spoon/archive/v1.0.1.tar.gz";

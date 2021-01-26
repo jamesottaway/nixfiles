@@ -7,7 +7,7 @@
     ./programs/direnv.nix
     ./programs/exa.nix
     ./programs/git.nix
-    ./programs/hammerspoon
+    ./programs/hammerspoon.nix
     ./programs/tmux.nix
     ./programs/vim.nix
     ./programs/vscode.nix
