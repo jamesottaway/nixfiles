@@ -3,6 +3,7 @@
 pkgs.mkDevShell {
   packages = [
     pkgs.buildkite-cli
+    pkgs.buildkite-agent
   ];
 
   motd = "";
