@@ -2,16 +2,16 @@
 
 {
   imports = [
-    ../programs/alacritty.nix
-    ../programs/bat.nix
-    ../programs/direnv.nix
-    ../programs/exa.nix
-    ../programs/git.nix
-    ../programs/hammerspoon
-    ../programs/tmux.nix
-    ../programs/vim.nix
-    ../programs/vscode.nix
-    ../programs/zsh
+    ./programs/alacritty.nix
+    ./programs/bat.nix
+    ./programs/direnv.nix
+    ./programs/exa.nix
+    ./programs/git.nix
+    ./programs/hammerspoon
+    ./programs/tmux.nix
+    ./programs/vim.nix
+    ./programs/vscode.nix
+    ./programs/zsh
   ];
 
   xdg.enable = true;

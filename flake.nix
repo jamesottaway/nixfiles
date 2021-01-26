@@ -20,21 +20,18 @@
   {
     darwinConfigurations.b12y = darwin.lib.darwinSystem {
       modules = [
-        ./hosts/b12y.nix
-        ./system/darwin.nix
+        ./darwin/default.nix
+        ./darwin/b12y.nix
       ];
     };
 
     darwinConfigurations.hireup = darwin.lib.darwinSystem {
       modules = [
-        ./hosts/hireup.nix
-        ./system/darwin.nix
+        ./darwin/default.nix
+        ./darwin/hireup.nix
+        ./home/manager.nix
         home-manager.darwinModules.home-manager
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.users.jamesottaway = ./home/hireup.nix;
-        }
+        { home-manager.users.jamesottaway = ./home/hireup.nix; }
       ];
     };
 

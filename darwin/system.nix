@@ -1,5 +1,4 @@
 {
-  services.nix-daemon.enable = true;
 
   system.defaults.NSGlobalDomain = {
     AppleFontSmoothing = 0;
