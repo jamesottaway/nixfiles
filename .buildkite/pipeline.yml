@@ -1,20 +1,14 @@
 steps:
-  - label: ":nix: homeManagerConfigurations.b12y"
-    command: "nix build .#homeManagerConfigurations.b12y.activationPackage"
-
   - label: ":nix: darwinConfigurations.b12y"
+    env:
+      checkActivation: 1
     commands:
       - "nix build .#darwinConfigurations.b12y.system"
       - "result/activate-user"
-    env:
-      checkActivation: 1
-
-  - label: ":nix: homeManagerConfigurations.hireup"
-    command: "nix build .#homeManagerConfigurations.hireup.activationPackage"
 
   - label: ":nix: darwinConfigurations.hireup"
+    env:
+      checkActivation: 1
     commands:
       - "nix build .#darwinConfigurations.hireup.system"
       - "result/activate-user"
-    env:
-      checkActivation: 1

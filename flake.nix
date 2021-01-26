@@ -22,6 +22,9 @@
       modules = [
         ./darwin/default.nix
         ./darwin/b12y.nix
+        ./home/manager.nix
+        home-manager.darwinModules.home-manager
+        { home-manager.users.james = ./home/b12y.nix; }
       ];
     };
 
@@ -33,20 +36,6 @@
         home-manager.darwinModules.home-manager
         { home-manager.users.jamesottaway = ./home/hireup.nix; }
       ];
-    };
-
-    homeManagerConfigurations.b12y = home-manager.lib.homeManagerConfiguration rec {
-      configuration = ./home/b12y.nix;
-      homeDirectory = "/Users/${username}";
-      username = "james";
-      system = "x86_64-darwin";
-    };
-
-    homeManagerConfigurations.hireup = home-manager.lib.homeManagerConfiguration rec {
-      configuration = ./home/hireup.nix;
-      homeDirectory = "/Users/${username}";
-      username = "jamesottaway";
-      system = "x86_64-darwin";
     };
 
     devShell.x86_64-darwin = pkgs.callPackage ./shell.nix {};
