@@ -4,6 +4,7 @@
     ./nix.nix
     ./nixpkgs.nix
     ./programs/gnupg.nix
+    ./system.nix
     ./time.nix
   ];
 

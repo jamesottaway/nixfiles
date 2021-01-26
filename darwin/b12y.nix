@@ -3,7 +3,6 @@
 
   imports = [
     ./services/buildkite.nix
-    ./system.nix
     ./users/james.nix
   ];
 }
