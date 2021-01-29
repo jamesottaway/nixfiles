@@ -10,7 +10,7 @@
     devshell.url = github:numtide/devshell;
   };
 
-  outputs = { home-manager, nixpkgs, darwin, ... }@inputs:
+  outputs = { self, home-manager, nixpkgs, darwin, ... }@inputs:
   let
     pkgs = import nixpkgs {
       overlays = [ inputs.devshell.overlay ];
@@ -39,5 +39,10 @@
     };
 
     devShell.x86_64-darwin = pkgs.callPackage ./shell.nix {};
+
+    checks.x86_64-darwin = {
+      b12y = self.darwinConfigurations.b12y.system;
+      hireup = self.darwinConfigurations.hireup.system;
+    };
   };
 }

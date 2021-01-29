@@ -1,4 +1,8 @@
 steps:
+  - label: ":nix: check"
+    commands:
+      - "nix flake check"
+
   - label: ":nix: darwinConfigurations.b12y"
     env:
       checkActivation: 1
