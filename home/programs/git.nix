@@ -7,6 +7,7 @@
     aliases = {
       a = "add";
       amend = "commit --amend";
+      cane = "commit --amend --no-edit";
       cm = "commit --message";
       cp = "cherry-pick";
       co = "checkout";
@@ -15,6 +16,11 @@
       fixup = "commit --fixup";
       l = "log --graph --oneline";
       r = "restore";
+      rm = "rebase master";
+      rom = "rebase origin/master";
+      rim = "rebase --interactive master";
+      riom = "rebase --interactive origin/master";
+      rs = "restore --staged";
     };
     extraConfig = {
       checkout.defaultRemote = "origin";
