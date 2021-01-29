@@ -6,7 +6,7 @@
     darwin.url = github:LnL7/nix-darwin/master;
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = github:nix-community/home-manager;
-    nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-20.09-darwin;
+    nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
     devshell.url = github:numtide/devshell;
   };
 
