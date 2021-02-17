@@ -8,9 +8,13 @@
     home-manager.url = github:nix-community/home-manager;
     nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
     devshell.url = github:numtide/devshell;
+    armada = {
+      url = "git+ssh://git@github.com/hireupau/armada?ref=nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, home-manager, nixpkgs, darwin, ... }@inputs:
+  outputs = { self, home-manager, nixpkgs, darwin, armada, ... }@inputs:
   let
     pkgs = import nixpkgs {
       overlays = [ inputs.devshell.overlay ];
@@ -34,6 +38,7 @@
         ./darwin/hireup.nix
         ./home/manager.nix
         home-manager.darwinModules.home-manager
+        { nixpkgs.overlays = [ armada.overlay ]; }
         { home-manager.users.jamesottaway = ./home/hireup.nix; }
       ];
     };
