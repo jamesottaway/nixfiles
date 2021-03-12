@@ -37,10 +37,17 @@
         ./darwin/default.nix
         ./darwin/hireup.nix
         ./home/manager.nix
+        self.hireup.darwinConfiguration
         home-manager.darwinModules.home-manager
         { nixpkgs.overlays = [ armada.overlay ]; }
         { home-manager.users.jamesottaway = ./home/hireup.nix; }
+        { home-manager.users.jamesottaway.imports = [ self.hireup.homeManagerConfiguration ]; }
       ];
+    };
+
+    hireup = {
+      homeManagerConfiguration = import ./hireup/home-manager;
+      darwinConfiguration = import ./hireup/nix-darwin;
     };
 
     devShell.x86_64-darwin = pkgs.callPackage ./shell.nix {};
