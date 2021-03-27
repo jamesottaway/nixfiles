@@ -6,6 +6,7 @@
     userName = "James Ottaway";
     aliases = {
       a = "add";
+      b = "branch";
       amend = "commit --amend";
       cane = "commit --amend --no-edit";
       cm = "commit --message";
