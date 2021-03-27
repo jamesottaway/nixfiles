@@ -17,7 +17,6 @@
       fixup = "commit --fixup";
       l = "log --graph --oneline";
       r = "restore";
-      rm = "rebase main";
       rom = "rebase origin/main";
       rim = "rebase --interactive main";
       riom = "rebase --interactive origin/main";
