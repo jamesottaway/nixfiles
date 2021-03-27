@@ -30,6 +30,7 @@
       pull.rebase = false;
       push.default = "current";
       rebase.autosquash = true;
+      rebase.autostash = true;
       status.short = true;
     };
     ignores = [
