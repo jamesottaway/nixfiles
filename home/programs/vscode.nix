@@ -1,7 +1,6 @@
 { pkgs, ... }:
 
 let
-  inherit (pkgs) vscode-extensions;
   inherit (pkgs.vscode-utils) buildVscodeMarketplaceExtension;
 
   arrterian.nix-env-selector = buildVscodeMarketplaceExtension {
@@ -17,9 +16,11 @@ in
 {
   programs.vscode = {
     enable = true;
-    extensions = with vscode-extensions; [
+    extensions = with pkgs.vscode-extensions; [
       arrterian.nix-env-selector
       bbenoist.Nix
+      ms-vscode-remote.remote-ssh
+      vscodevim.vim
     ];
     userSettings = {
       editor.fontLigatures = false;
