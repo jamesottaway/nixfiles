@@ -7,21 +7,13 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = github:nix-community/home-manager;
     nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
-    devshell.url = github:numtide/devshell;
     armada = {
       url = "git+ssh://git@github.com/hireupau/armada?ref=nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, home-manager, nixpkgs, darwin, armada, ... }@inputs:
-  let
-    pkgs = import nixpkgs {
-      overlays = [ inputs.devshell.overlay ];
-      system = "x86_64-darwin";
-    };
-  in
-  {
+  outputs = { self, home-manager, nixpkgs, darwin, armada, ... }@inputs: {
     darwinConfigurations.b12y = darwin.lib.darwinSystem {
       modules = [
         ./darwin/default.nix
@@ -49,8 +41,6 @@
       homeManagerConfiguration = import ./hireup/home-manager;
       darwinConfiguration = import ./hireup/nix-darwin;
     };
-
-    devShell.x86_64-darwin = pkgs.callPackage ./shell.nix {};
 
     checks.x86_64-darwin = {
       b12y = self.darwinConfigurations.b12y.system;
