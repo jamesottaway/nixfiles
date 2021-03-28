@@ -43,21 +43,6 @@
         "type": "github"
       }
     },
-    "devshell": {
-      "locked": {
-        "lastModified": 1605514881,
-        "narHash": "sha256-VQSDuxbQyQfLdYSNZUdfnvN9CFU8ZjItkP394LpimTk=",
-        "owner": "numtide",
-        "repo": "devshell",
-        "rev": "7045ccb2c3ed824d7b46bb35821e84676118de9e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "devshell",
-        "type": "github"
-      }
-    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -98,7 +83,6 @@
       "inputs": {
         "armada": "armada",
         "darwin": "darwin",
-        "devshell": "devshell",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs"
       }
