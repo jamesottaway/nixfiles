@@ -38,6 +38,16 @@
       ];
     };
 
+    homeManagerConfigurations.b12y = home-manager.lib.homeManagerConfiguration rec {
+      configuration = [
+        ./home/hireup.nix
+        self.hireup.homeManagerConfiguration
+      ];
+      system = "x86_64-darwin";
+      username = "james";
+      homeDirectory = "/Users/${username}";
+    };
+
     hireup = {
       homeManagerConfiguration = import ./hireup/home-manager;
       darwinConfiguration = import ./hireup/nix-darwin;
