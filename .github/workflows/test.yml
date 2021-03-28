@@ -13,3 +13,4 @@ jobs:
         extra_nix_config: |
           experimental-features = nix-command flakes
     - run: nix build .#darwinConfigurations.b12y.system
+    - run: result/sw/bin/darwin-rebuild switch --flake .#b12y
