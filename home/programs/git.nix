@@ -24,6 +24,7 @@
     };
     extraConfig = {
       checkout.defaultRemote = "origin";
+      commit.verbose = true;
       credential.helper = "osxkeychain";
       init.defaultBranch = "main";
       merge.conflictstyle = "diff3";
