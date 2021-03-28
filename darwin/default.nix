@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   imports = [
     ./fonts.nix
@@ -6,6 +8,10 @@
     ./programs/gnupg.nix
     ./system.nix
     ./time.nix
+  ];
+
+  environment.systemPackages = [
+    pkgs.cachix
   ];
 
   programs = {
