@@ -8,11 +8,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1613533555,
-        "narHash": "sha256-CmtavA4GxQXS22mgfKliRBsKsOPIlq1p3u3WQ4F+EEw=",
+        "lastModified": 1617236987,
+        "narHash": "sha256-uChM63HQKWYHYq5hcPuLbgnPGgC/ZFwMzaKc82/MT8Q=",
         "ref": "nix",
-        "rev": "6258b411063497d6b1caac4a7282fff4f0fcece0",
-        "revCount": 204,
+        "rev": "8cd0d5a9baf567ceb9a57c3ca7c2654a2063aacc",
+        "revCount": 209,
         "type": "git",
         "url": "ssh://git@github.com/hireupau/armada"
       },
