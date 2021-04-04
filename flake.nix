@@ -3,7 +3,7 @@
 
   inputs = {
     darwin.inputs.nixpkgs.follows = "nixpkgs";
-    darwin.url = github:LnL7/nix-darwin/master;
+    darwin.url = github:jamesottaway/nix-darwin/fix/nix-flake-info;
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = github:nix-community/home-manager;
     nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
