@@ -1,0 +1,141 @@
+{
+  "entries": {
+    "tap": {
+      "homebrew/bundle": {
+        "revision": "c4cf96857c050dfa4f65f52109862dc68e55f60a"
+      },
+      "homebrew/cask": {
+        "revision": "7f50a83e6277c29f778dc6bd86e35832ddcc2f2c"
+      },
+      "homebrew/cask-drivers": {
+        "revision": "01f2b417540439f6fe412ad7ce23dbbcbbb0d90c"
+      },
+      "homebrew/core": {
+        "revision": "ff5cb0e2aadd3921de38e8f5eb8f829cfce7ec3a"
+      }
+    },
+    "brew": {
+      "mas": {
+        "version": "1.8.1",
+        "bottle": {
+          "rebuild": 0,
+          "cellar": ":any",
+          "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
+          "files": {
+            "arm64_big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/mas-1.8.1.arm64_big_sur.bottle.tar.gz",
+              "sha256": "f5ef4f44057f43ecc14f970687d832bd152bc6142c0ad848977f0a6527aa934f"
+            },
+            "big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/mas-1.8.1.big_sur.bottle.tar.gz",
+              "sha256": "d92cfc734e730fde87b29c6bf4a50ce63a78b9e505f464dc557eee128aa06d05"
+            },
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/mas-1.8.1.catalina.bottle.tar.gz",
+              "sha256": "163eb9cfdfed3d8fbda133b4079d104ad687f1ddb71d70d5661d02b22f562e76"
+            }
+          }
+        }
+      }
+    },
+    "cask": {
+      "1password": {
+        "version": "7.8",
+        "options": {
+          "full_name": "1password"
+        }
+      },
+      "aviatrix-vpn-client": {
+        "version": "2.12.10,0.0.0",
+        "options": {
+          "full_name": "aviatrix-vpn-client"
+        }
+      },
+      "docker": {
+        "version": "3.2.2,61853",
+        "options": {
+          "full_name": "docker"
+        }
+      },
+      "firefox": {
+        "version": "87.0",
+        "options": {
+          "full_name": "firefox"
+        }
+      },
+      "google-chrome": {
+        "version": "89.0.4389.114,4389.114",
+        "options": {
+          "full_name": "google-chrome"
+        }
+      },
+      "hammerspoon": {
+        "version": "0.9.86",
+        "options": {
+          "full_name": "hammerspoon"
+        }
+      },
+      "mongodb-compass": {
+        "version": "1.26.0",
+        "options": {
+          "full_name": "mongodb-compass"
+        }
+      },
+      "postman": {
+        "version": "8.0.10",
+        "options": {
+          "full_name": "postman"
+        }
+      },
+      "quitter": {
+        "version": "1.0,107",
+        "options": {
+          "full_name": "quitter"
+        }
+      },
+      "slack": {
+        "version": "4.14.0",
+        "options": {
+          "full_name": "slack"
+        }
+      },
+      "spotify": {
+        "version": "1.1.56.595.g2d2da0de,1.1.56.595.g2d2da0de-24",
+        "options": {
+          "full_name": "spotify"
+        }
+      },
+      "yubico-authenticator": {
+        "version": "5.0.4",
+        "options": {
+          "full_name": "yubico-authenticator"
+        }
+      },
+      "zoom": {
+        "version": "5.6.1.560",
+        "options": {
+          "full_name": "zoom"
+        }
+      }
+    },
+    "mas": {
+      "Todoist": {
+        "id": "585829637",
+        "version": "7.5"
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "catalina": {
+        "HOMEBREW_VERSION": "3.0.10",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "ff5cb0e2aadd3921de38e8f5eb8f829cfce7ec3a",
+        "CLT": "12.0.32.29",
+        "Xcode": "12.0",
+        "macOS": "10.15.7"
+      }
+    }
+  }
+}
