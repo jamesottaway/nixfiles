@@ -20,6 +20,7 @@
         ./darwin/b12y.nix
         ./home/manager.nix
         home-manager.darwinModule
+        { home-manager.users.root = ./home/root.nix; }
         { home-manager.users.james = ./home/b12y.nix; }
       ];
     };
@@ -32,6 +33,7 @@
         self.hireup.darwinConfiguration
         home-manager.darwinModule
         { nixpkgs.overlays = [ armada.overlay ]; }
+        { home-manager.users.root = ./home/root.nix; }
         { home-manager.users.jamesottaway = ./home/hireup.nix; }
         { home-manager.users.jamesottaway.imports = [ self.hireup.homeManagerConfiguration ]; }
       ];

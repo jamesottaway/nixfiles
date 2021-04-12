@@ -8,4 +8,6 @@
     createHome = true;
     shell = pkgs.zsh;
   };
+
+  nix.trustedUsers = [ "james" ];
 }
