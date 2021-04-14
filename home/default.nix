@@ -6,6 +6,7 @@
     ./programs/bat.nix
     ./programs/direnv.nix
     ./programs/exa.nix
+    ./programs/gh.nix
     ./programs/git.nix
     ./programs/hammerspoon.nix
     ./programs/starship.nix
