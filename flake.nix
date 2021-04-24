@@ -3,7 +3,7 @@
     nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
 
     darwin = {
-      url = github:jamesottaway/nix-darwin/fix/nix-flake-info;
+      url = github:LnL7/nix-darwin/master;
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
