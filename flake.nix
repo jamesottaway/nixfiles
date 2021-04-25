@@ -33,8 +33,12 @@
           ./darwin/b12y.nix
           ./home/manager.nix
           home-manager.darwinModule
-          { home-manager.users.root = ./home/root.nix; }
-          { home-manager.users.james = ./home/b12y.nix; }
+          {
+            home-manager.users = {
+              root = ./home/root.nix;
+              james = self.homeManagerConfigurations."james@b12y";
+            };
+          }
         ];
       };
 
@@ -46,9 +50,35 @@
           self.lib.hireup.darwinConfiguration
           home-manager.darwinModule
           { nixpkgs.overlays = [ armada.overlay ]; }
-          { home-manager.users.root = ./home/root.nix; }
-          { home-manager.users.jamesottaway = ./home/hireup.nix; }
-          { home-manager.users.jamesottaway.imports = [ self.lib.hireup.homeManagerConfiguration ]; }
+          {
+            home-manager.users = {
+              root = ./home/root.nix;
+              jamesottaway = self.homeManagerConfigurations."jamesottaway@hireup";
+            };
+          }
+        ];
+      };
+    };
+
+    homeManagerConfigurations = {
+      "james@b12y" = {
+        imports = [
+          ./home/default.nix
+          ./home/b12y.nix
+          ./home/darwin.nix
+          ./home/dev.nix
+          ./home/shell.nix
+        ];
+      };
+
+      "jamesottaway@hireup" = {
+        imports = [
+          ./home/default.nix
+          ./home/hireup.nix
+          ./home/darwin.nix
+          ./home/dev.nix
+          ./home/shell.nix
+          self.lib.hireup.homeManagerConfiguration
         ];
       };
     };

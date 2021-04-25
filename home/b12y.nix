@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  imports = [ ./. ];
+  home.stateVersion = "20.09";
   programs.git.userEmail = "git@james.b12y.com";
   programs.zsh.cdpath = ["~/src/github.com/jamesottaway"];
   programs.vscode.extensions = with pkgs.vscode-extensions; [
