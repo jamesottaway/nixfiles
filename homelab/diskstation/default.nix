@@ -1,5 +1,3 @@
-{ ... }:
-
 {
   fileSystems.movies = {
     device = "//diskstation/Movies";
