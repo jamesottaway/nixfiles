@@ -49,7 +49,7 @@
           ./home/manager.nix
           self.lib.hireup.darwinConfiguration
           home-manager.darwinModule
-          { nixpkgs.overlays = [ armada.overlay ]; }
+          armada.nixosModule
           {
             home-manager.users = {
               root = ./home/root.nix;
