@@ -12,20 +12,17 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    hireup = {
+      url = "git+ssh://git@github.com/jamesottaway/hireup?ref=main";
+    };
+
     armada = {
       url = "git+ssh://git@github.com/hireupau/armada?ref=nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, darwin, home-manager, armada, ... }: {
-    lib = {
-      hireup = {
-        homeManagerConfiguration = import ./hireup/home-manager;
-        darwinConfiguration = import ./hireup/nix-darwin;
-      };
-    };
-
+  outputs = { self, nixpkgs, darwin, home-manager, hireup, armada, ... }: {
     darwinConfigurations = {
       b12y = darwin.lib.darwinSystem {
         modules = [
@@ -47,7 +44,7 @@
           ./darwin/default.nix
           ./darwin/hireup.nix
           ./home/manager.nix
-          self.lib.hireup.darwinConfiguration
+          hireup.lib.darwinConfiguration
           home-manager.darwinModule
           { nixpkgs.overlays = [ armada.overlay ]; }
           {
@@ -78,7 +75,7 @@
           ./home/darwin.nix
           ./home/dev.nix
           ./home/shell.nix
-          self.lib.hireup.homeManagerConfiguration
+          hireup.lib.homeManagerConfiguration
         ];
       };
     };

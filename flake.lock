@@ -43,6 +43,22 @@
         "type": "github"
       }
     },
+    "hireup": {
+      "locked": {
+        "lastModified": 1619587244,
+        "narHash": "sha256-vrvLDEwyk6cE7lQv36Vy4SYpkEw+JtESvjmgxqZveZ0=",
+        "ref": "main",
+        "rev": "df9e0e6a00190c436dd321d100a24b8ff502d378",
+        "revCount": 2,
+        "type": "git",
+        "url": "ssh://git@github.com/jamesottaway/hireup"
+      },
+      "original": {
+        "ref": "main",
+        "type": "git",
+        "url": "ssh://git@github.com/jamesottaway/hireup"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -83,6 +99,7 @@
       "inputs": {
         "armada": "armada",
         "darwin": "darwin",
+        "hireup": "hireup",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs"
       }
