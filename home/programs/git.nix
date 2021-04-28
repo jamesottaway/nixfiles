@@ -20,6 +20,7 @@
       riom = "rebase --interactive origin/main";
       rs = "restore --staged";
     };
+    delta.enable = true;
     extraConfig = {
       checkout.defaultRemote = "origin";
       commit.verbose = true;
