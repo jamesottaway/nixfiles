@@ -13,12 +13,13 @@
       d = "diff";
       ds = "diff --staged";
       fixup = "commit --fixup";
-      l = "log --graph --oneline";
+      l = "log --graph --oneline HEAD origin/HEAD";
       r = "restore";
       rom = "rebase origin/main";
       rim = "rebase --interactive main";
       riom = "rebase --interactive origin/main";
       rs = "restore --staged";
+      sw = "switch";
     };
     delta.enable = true;
     extraConfig = {
