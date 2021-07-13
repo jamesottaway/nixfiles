@@ -73,6 +73,7 @@
         imports = [
           ./home/default.nix
           ./home/b12y.nix
+          ./home/dev.nix
           ./home/shell.nix
         ];
       };
