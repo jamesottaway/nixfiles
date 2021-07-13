@@ -1,7 +1,7 @@
 {
   inputs = {
     nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
-    nixos.url = github:NixOS/nixpkgs/nixos-20.09;
+    nixos.url = github:NixOS/nixpkgs/nixos-21.05;
 
     darwin = {
       url = github:LnL7/nix-darwin/master;
@@ -69,6 +69,14 @@
         ];
       };
 
+      "james@homelab" = {
+        imports = [
+          ./home/default.nix
+          ./home/b12y.nix
+          ./home/shell.nix
+        ];
+      };
+
       "jamesottaway@hireup" = {
         imports = [
           ./home/default.nix
@@ -84,7 +92,15 @@
     nixosConfigurations = {
       nuc = nixos.lib.nixosSystem {
         system = "x86_64-linux";
-        modules = [ ./homelab/configuration.nix ];
+        modules = [
+          ./homelab/configuration.nix
+          home-manager.nixosModule
+          {
+            home-manager.users = {
+              james = self.homeManagerConfigurations."james@homelab";
+            };
+          }
+        ];
       };
     };
 
