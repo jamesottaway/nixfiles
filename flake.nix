@@ -20,9 +20,11 @@
       url = "git+ssh://git@github.com/hireupau/armada?ref=nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    pi.url = "path:./pi";
   };
 
-  outputs = { self, nixpkgs, darwin, home-manager, hireup, armada, ... }: {
+  outputs = { self, nixpkgs, darwin, home-manager, hireup, armada, pi, ... }: {
     darwinConfigurations = {
       b12y = darwin.lib.darwinSystem {
         modules = [
@@ -79,6 +81,8 @@
         ];
       };
     };
+
+    sdcard.pi = pi.nixosConfiguration.config.system.build.sdImage;
 
     checks.x86_64-darwin = {
       b12y = self.darwinConfigurations.b12y.system;

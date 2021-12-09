@@ -79,6 +79,22 @@
         "type": "github"
       }
     },
+    "nixos": {
+      "locked": {
+        "lastModified": 1638896978,
+        "narHash": "sha256-77+HVN43HHhJh3LL+85SzkVsD2EKMU2MmOO6bMWgUCo=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "a6ffb58af517871729f6a2568260f2cc11ceeeec",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-21.11-aarch64",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1616670887,
@@ -95,13 +111,28 @@
         "type": "github"
       }
     },
+    "pi": {
+      "inputs": {
+        "nixos": "nixos"
+      },
+      "locked": {
+        "narHash": "sha256-pBNPOssOn8gBXrDfzM6u7UaJorWCFawvVlcsVexUTm0=",
+        "path": "./pi",
+        "type": "path"
+      },
+      "original": {
+        "path": "./pi",
+        "type": "path"
+      }
+    },
     "root": {
       "inputs": {
         "armada": "armada",
         "darwin": "darwin",
         "hireup": "hireup",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "pi": "pi"
       }
     },
     "utils": {
