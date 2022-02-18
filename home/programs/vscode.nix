@@ -18,7 +18,7 @@ in
     enable = true;
     extensions = with pkgs.vscode-extensions; [
       arrterian.nix-env-selector
-      bbenoist.Nix
+      bbenoist.nix
       ms-vscode-remote.remote-ssh
       vscodevim.vim
     ];
