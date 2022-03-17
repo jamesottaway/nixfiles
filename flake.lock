@@ -1,27 +1,5 @@
 {
   "nodes": {
-    "armada": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "utils": "utils"
-      },
-      "locked": {
-        "lastModified": 1645498963,
-        "narHash": "sha256-s/ak2wgimNi+Z/AuCMmti36Bqbct2x3kb0VdhClnDOc=",
-        "ref": "nix",
-        "rev": "410563ef3c05bece0906efb4dfd858b484973255",
-        "revCount": 281,
-        "type": "git",
-        "url": "ssh://git@github.com/hireupau/armada"
-      },
-      "original": {
-        "ref": "nix",
-        "type": "git",
-        "url": "ssh://git@github.com/hireupau/armada"
-      }
-    },
     "darwin": {
       "inputs": {
         "nixpkgs": [
@@ -97,26 +75,10 @@
     },
     "root": {
       "inputs": {
-        "armada": "armada",
         "darwin": "darwin",
         "hireup": "hireup",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs"
-      }
-    },
-    "utils": {
-      "locked": {
-        "lastModified": 1610051610,
-        "narHash": "sha256-U9rPz/usA1/Aohhk7Cmc2gBrEEKRzcW4nwPWMPwja4Y=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "3982c9903e93927c2164caa727cd3f6a0e6d14cc",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
       }
     }
   },

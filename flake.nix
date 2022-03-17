@@ -15,14 +15,9 @@
     hireup = {
       url = "git+ssh://git@github.com/jamesottaway/hireup?ref=main";
     };
-
-    armada = {
-      url = "git+ssh://git@github.com/hireupau/armada?ref=nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { self, nixpkgs, darwin, home-manager, hireup, armada, ... }: {
+  outputs = { self, nixpkgs, darwin, home-manager, hireup, ... }: {
     darwinConfigurations = {
       b12y = darwin.lib.darwinSystem {
         modules = [
@@ -47,7 +42,6 @@
           ./home/manager.nix
           hireup.lib.darwinConfiguration
           home-manager.darwinModule
-          { nixpkgs.overlays = [ armada.overlay ]; }
           {
             home-manager.users = {
               root = ./home/root.nix;
